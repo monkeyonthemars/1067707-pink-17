@@ -2,11 +2,80 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
+    <title>Приложение «Pink»</title>
   </head>
   <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
+    <header class="header">
+      <a class="header__logo" href="#">
+        <img class="header__logo-image" src="http://placehold.it/75x22" width="75" height="22" alt="Приложение «Pink»">
+      </a>
+      <nav class="nav">
+        <button class="nav__toggle" type="button">
+            <img class="header__menu-image" src="http://placehold.it/50x24" width="50" height="24" alt="Открыть меню">
+        </button>
+        <div class="nav__wrapper">
+          <ul class="nav__list">
+            <li class="nav__item nav__item--active">
+              <a>Главная</a>
+            </li>
+            <li class="nav__item">
+              <a href="photo.html">Фотографии</a>
+            </li>
+            <li class="nav__item">
+              <a href="form.html">Конкурс</a>
+            </li>
+            <li class="nav__item">
+              <a href="https://htmlacademy.ru/">HTML Academy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="page-main">
+
+      <h1 class="visually-hidden">Приложение «Pink»</h1>
+
+      <section class="app-dl">
+        <h2 class="visually-hidden">Скачать приложение</h2>
+        <a class="app-dl__button" href="#">Скачать приложение</a>
+        <ul class="app-dl__list">
+          <li class="app-dl__item">
+            <a class="app-dl__item-link app-dl__item-link--ios" href="#">Скачать версию для iOS</a>
+          </li>
+          <li class="app-dl__item">
+            <a class="app-dl__item-link app-dl__item-link--android" href="#">Скачать версию для Android</a>
+          </li>
+          <li class="app-dl__item">
+            <a class="app-dl__item-link app-dl__item-link-windows" href="#">Скачать версию для Windows 8</a>
+          </li>
+        </ul>
+        <p class="app-dl__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+      </section>
+
+      <section class="features">
+        <h2 class="visually-hidden">Характеристики приложения</h2>
+        <p class="features__text">Устали от серости мегаполиса?</p>
+        <p class="features__text">Нам есть, что вам  предложить!</p>
+        <ul class="features__list">
+          <li class="features__item">
+            <h3 class="features__title">Поднимает настроение</h3>
+            <p class="features__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов</p>
+          </li>
+          <li class="features__item">
+            <h3 class="features__title">Меняет мир вокруг</h3>
+            <p class="features__description">Сделайте снимок и украсьте его смайликом или или текстовой подписью, чтобы усилить эффект</p>
+          </li>
+          <li class="features__item">
+            <h3 class="features__title">Заводит новых друзей</h3>
+            <p class="features__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+          </li>
+        </ul>
+        <div class="features__app-image"></div>  <!-- Заготовка под фоновое изображение -->
+      </section>
+
+    </main>
 
   </body>
 </html>
