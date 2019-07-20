@@ -6,118 +6,115 @@
   </head>
   <body>
 
-    <header class="header">
-      <a class="header__logo" href="index.html">
-        <img class="header__logo-image" src="http://placehold.it/75x22" width="75" height="22" alt="Приложение «Pink»">
+    <header class="site-header">
+      <a class="site-header__logo" href="index.html">
+        <img class="site-header__logo-image" src="http://placehold.it/75x22" width="75" height="22" alt="Приложение «Pink»">
       </a>
-      <nav class="nav">
-        <button class="nav__toggle" type="button">
-            <img class="header__logo-image" src="http://placehold.it/50x24" width="50" height="24" alt="Открыть меню">
+      <nav class="site-nav">
+        <button class="site-nav__toggle" type="button">
+            <img class="site-header__logo-image" src="http://placehold.it/50x24" width="50" height="24" alt="Открыть меню">
         </button>
-        <div class="nav__wrapper">
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a href="index.html">Главная</a>
-            </li>
-            <li class="nav__item nav__item--active">
-              <a>Фотографии</a>
-            </li>
-            <li class="nav__item">
-              <a href="form.html">Конкурс</a>
-            </li>
-            <li class="nav__item">
-              <a href="https://htmlacademy.ru/">HTML Academy</a>
-            </li>
-          </ul>
-        </div>
+        <ul class="site-nav__list">
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="index.html">Главная</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link site-nav__link--active">Фотографии</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="form.html">Конкурс</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="https://htmlacademy.ru/">HTML Academy</a>
+          </li>
+        </ul>
       </nav>
     </header>
 
-    <main class="main">
+    <main>
 
-      <div class="main__title-image"> <!-- Заготовка под фоновое изображение -->
-        <h1 class="main__title-text">Фотографии пользователей</h1>
-      </div>
+      <h1 class="title-text">Фотографии пользователей</h1>
+      <!-- Здесь будет фоновое изображение -->
 
-      <section class="photos">
+      <section class="site-photos">
         <h2 class="visually-hidden">Панорама дня и последние фото</h2>
-        <p class="photos__title-text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
-        <ul class="photos__list">
-          <li class="photos__item">
-            <a class="photos__link" href="#">
-              <img class="photos__image photos__image--full" src="http://placehold.it/320x137" width="320" height="137" alt="Панорама дня">
+        <p class="site-photos__title-text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+        <ul class="site-photos__list photos-list">
+          <li class="photos-list__item">
+            <a class="photos-list__link" href="#">
+              <img class="photos-list__image photos__image--full" src="http://placehold.it/320x137" width="320" height="137" alt="Панорама дня">
             </a>
-            <p class="photos__highlight">Панорама дня</p>
-            <p class="photos__title"><b class="photos__author">Анна</b> (5 минут назад)</p>
-            <p class="photos__description">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-            <button class="photos__button-like" type="button">
-                <img class="photos__button-image" src="#" alt="Мне нравится">
+            <p class="photos-list__highlight">Панорама дня</p>
+            <p class="photos-list__title"><b class="photos-list__author">Анна</b> (5 минут назад)</p>
+            <p class="photos-list__description">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+            <button class="photos-list__button-like" type="button">
+                <img class="photos-list__button-image" src="#" alt="Мне нравится">
             </button>
             <p>Нравится: 215</p>
           </li>
-          <li class="photos__item">
-            <a class="photos__link" href="#">
-              <img class="photos__image" src="http://placehold.it/280x180" width="280" height="180" alt="Фото 1">
+          <li class="photos-list__item">
+            <a class="photos-list__link" href="#">
+              <img class="photos-list__image" src="http://placehold.it/280x180" width="280" height="180" alt="Фото 1">
             </a>
-            <p class="photos__title"><b class="photos__author">Левон</b> (5 часов назад)</p>
-            <p class="photos__description">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-            <button class="photos__button-like" type="button">
-                <img class="photos__button-image" src="#" alt="Мне нравится">
+            <p class="photos-list__title"><b class="photos-list__author">Левон</b> (5 часов назад)</p>
+            <p class="photos-list__description">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+            <button class="photos-list__button-like" type="button">
+                <img class="photos-list__button-image" src="#" alt="Мне нравится">
             </button>
             <p>Нравится: 356</p>
           </li>
-          <li class="photos__item">
-            <a class="photos__link" href="#">
-              <img class="photos__image" src="http://placehold.it/280x180" width="280" height="180" alt="Фото 2">
+          <li class="photos-list__item">
+            <a class="photos-list__link" href="#">
+              <img class="photos-list__image" src="http://placehold.it/280x180" width="280" height="180" alt="Фото 2">
             </a>
-            <p class="photos__title"><b class="photos__author">Антон</b> (12 часов назад)</p>
-            <p class="photos__description">Соседи будут рады!</p>
-            <button class="photos__button-like" type="button">
-                <img class="photos__button-image" src="#" alt="Мне нравится">
+            <p class="photos-list__title"><b class="photos-list__author">Антон</b> (12 часов назад)</p>
+            <p class="photos-list__description">Соседи будут рады!</p>
+            <button class="photos-list__button-like" type="button">
+                <img class="photos-list__button-image" src="#" alt="Мне нравится">
             </button>
             <p>Нравится: 666</p>
           </li>
-          <li class="photos__item">
-            <a class="photos__link" href="#">
-              <img class="photos__image" src="http://placehold.it/280x180" width="280" height="180" alt="Фото 3">
+          <li class="photos-list__item">
+            <a class="photos-list__link" href="#">
+              <img class="photos-list__image" src="http://placehold.it/280x180" width="280" height="180" alt="Фото 3">
             </a>
-            <p class="photos__title"><b class="photos__author">Борис</b> (20 часов назад)</p>
-            <p class="photos__description">Здесь могла быть ваша цитата о высоком и вечном.</p>
-            <button class="photos__button-like" type="button">
-                <img class="photos__button-image" src="#" alt="Мне нравится">
+            <p class="photos-list__title"><b class="photos-list__author">Борис</b> (20 часов назад)</p>
+            <p class="photos-list__description">Здесь могла быть ваша цитата о высоком и вечном.</p>
+            <button class="photos-list__button-like" type="button">
+                <img class="photos-list__button-image" src="#" alt="Мне нравится">
             </button>
             <p>Нравится: 215</p>
           </li>
-          <li class="photos__item">
-            <a class="photos__link" href="#">
-              <img class="photos__image" src="http://placehold.it/280x180" width="280" height="180" alt="Фото 4">
+          <li class="photos-list__item">
+            <a class="photos-list__link" href="#">
+              <img class="photos-list__image" src="http://placehold.it/280x180" width="280" height="180" alt="Фото 4">
             </a>
-            <p class="photos__title"><b class="photos__author">Сергей</b> (25 часов назад)</p>
-            <p class="photos__description">Самая кубанская в мире!</p>
-            <button class="photos__button-like" type="button">
-                <img class="photos__button-image" src="#" alt="Мне нравится">
+            <p class="photos-list__title"><b class="photos-list__author">Сергей</b> (25 часов назад)</p>
+            <p class="photos-list__description">Самая кубанская в мире!</p>
+            <button class="photos-list__button-like" type="button">
+                <img class="photos-list__button-image" src="#" alt="Мне нравится">
             </button>
             <p>Нравится: 4</p>
           </li>
-          <li class="photos__item">
-            <a class="photos__link" href="#">
-              <img class="photos__image" src="http://placehold.it/280x180" width="280" height="180" alt="Фото 5">
+          <li class="photos-list__item">
+            <a class="photos-list__link" href="#">
+              <img class="photos-list__image" src="http://placehold.it/280x180" width="280" height="180" alt="Фото 5">
             </a>
-            <p class="photos__title"><b class="photos__author">Максим</b> (40 часов назад)</p>
-            <p class="photos__description">Где снег-то?</p>
-            <button class="photos__button-like" type="button">
-                <img class="photos__button-image" src="#" alt="Мне нравится">
+            <p class="photos-list__title"><b class="photos-list__author">Максим</b> (40 часов назад)</p>
+            <p class="photos-list__description">Где снег-то?</p>
+            <button class="photos-list__button-like" type="button">
+                <img class="photos-list__button-image" src="#" alt="Мне нравится">
             </button>
             <p>Нравится: 150</p>
           </li>
-          <li class="photos__item">
-            <a class="photos__link" href="#">
-              <img class="photos__image" src="http://placehold.it/280x180" width="280" height="180" alt="Фото 5">
+          <li class="photos-list__item">
+            <a class="photos-list__link" href="#">
+              <img class="photos-list__image" src="http://placehold.it/280x180" width="280" height="180" alt="Фото 5">
             </a>
-            <p class="photos__title"><b class="photos__author">Надежда</b> (45 часов назад)</p>
-            <p class="photos__description">Всем GM и взаимные лайки!</p>
-            <button class="photos__button-like" type="button">
-                <img class="photos__button-image" src="#" alt="Мне нравится">
+            <p class="photos-list__title"><b class="photos-list__author">Надежда</b> (45 часов назад)</p>
+            <p class="photos-list__description">Всем GM и взаимные лайки!</p>
+            <button class="photos-list__button-like" type="button">
+                <img class="photos-list__button-image" src="#" alt="Мне нравится">
             </button>
             <p>Нравится: 2560</p>
           </li>
@@ -128,17 +125,16 @@
     </main>
 
     <footer class="footer">
-      <h2 class="visually-hidden">Социальные сети</h2>
       <img class="footer__logo-pink" src="http://placehold.it/147x40" width="147" height="40" alt="Pink">
-      <ul class="footer__social-list">
-        <li class="footer__social-item">
-          <a class="footer__social-link footer__social-link--twitter" href="https://twitter.com">Наш аккаунт Twitter</a>
+      <ul class="footer social-list">
+        <li class="social-list-item">
+          <a class="social-list__link social-list__link--twitter" href="https://twitter.com">Наш аккаунт Twitter</a>
         </li>
-        <li class="footer__social-item">
-          <a class="footer__social-link footer__social-link--facebook" href="https://facebook.com">Наша страница Facebook</a>
+        <li class="social-list__item">
+          <a class="social-list__link social-list__link--facebook" href="https://facebook.com">Наша страница Facebook</a>
         </li>
-        <li class="footer__social-item">
-          <a class="footer__social-link footer__social-link--youtube" href="https://youtube.com">Наш канал Youtube</a>
+        <li class="social-list__item">
+          <a class="social-list__link social-list__link--youtube" href="https://youtube.com">Наш канал Youtube</a>
         </li>
       </ul>
       <p class="footer__text">Разработано

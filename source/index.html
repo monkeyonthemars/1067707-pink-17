@@ -6,52 +6,50 @@
   </head>
   <body>
 
-    <header class="header">
-      <a class="header__logo" href="#">
-        <img class="header__logo-image" src="http://placehold.it/75x22" width="75" height="22" alt="Приложение «Pink»">
+    <header class="site-header">
+      <a class="site-header__logo" href="#">
+        <img class="site-header__logo-image" src="http://placehold.it/75x22" width="75" height="22" alt="Приложение «Pink»">
       </a>
-      <nav class="nav">
-        <button class="nav__toggle" type="button">
-            <img class="header__menu-image" src="http://placehold.it/50x24" width="50" height="24" alt="Открыть меню">
+      <nav class="site-nav">
+        <button class="site-nav__toggle" type="button">
+            <img class="site-header__menu-image" src="http://placehold.it/50x24" width="50" height="24" alt="Открыть меню">
         </button>
-        <div class="nav__wrapper">
-          <ul class="nav__list">
-            <li class="nav__item nav__item--active">
-              <a>Главная</a>
-            </li>
-            <li class="nav__item">
-              <a href="photo.html">Фотографии</a>
-            </li>
-            <li class="nav__item">
-              <a href="form.html">Конкурс</a>
-            </li>
-            <li class="nav__item">
-              <a href="https://htmlacademy.ru/">HTML Academy</a>
-            </li>
-          </ul>
-        </div>
+        <ul class="site-nav__list">
+          <li class="site-nav__item">
+            <a class="site-nav__link site-nav__link--active">Главная</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="photo.html">Фотографии</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="form.html">Конкурс</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="https://htmlacademy.ru/">HTML Academy</a>
+          </li>
+        </ul>
       </nav>
     </header>
 
-    <main class="page-main">
+    <main>
 
       <h1 class="visually-hidden">Приложение «Pink»</h1>
 
-      <section class="app-dl">
+      <section class="download-app">
         <h2 class="visually-hidden">Скачать приложение</h2>
-        <a class="app-dl__button" href="#">Скачать приложение</a>
-        <ul class="app-dl__list">
-          <li class="app-dl__item">
-            <a class="app-dl__item-link app-dl__item-link--ios" href="#">Скачать версию для iOS</a>
+        <a class="download-app__button" href="#">Скачать приложение</a>
+        <ul class="download-app__list">
+          <li class="download-app__item">
+            <a class="download-app__item-link download-app__item-link--ios" href="#">Скачать версию для iOS</a>
           </li>
-          <li class="app-dl__item">
-            <a class="app-dl__item-link app-dl__item-link--android" href="#">Скачать версию для Android</a>
+          <li class="download-app__item">
+            <a class="download-app__item-link download-app__item-link--android" href="#">Скачать версию для Android</a>
           </li>
-          <li class="app-dl__item">
-            <a class="app-dl__item-link app-dl__item-link-windows" href="#">Скачать версию для Windows 8</a>
+          <li class="download-app__item">
+            <a class="download-app__item-link download-app__item-link--windows" href="#">Скачать версию для Windows 8</a>
           </li>
         </ul>
-        <p class="app-dl__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        <p class="download-app__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
       </section>
 
       <section class="features">
@@ -72,7 +70,7 @@
             <p class="features__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
           </li>
         </ul>
-        <div class="features__app-image"></div>  <!-- Заготовка под фоновое изображение -->
+        <!-- Здесь будет фоновое изображение -->
       </section>
 
     </main>
