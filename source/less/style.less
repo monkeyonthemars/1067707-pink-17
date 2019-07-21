@@ -1,0 +1,40 @@
+// @import fonts.less;
+@import "site-header.less";
+@import "site-nav.less";
+@import "download-app.less";
+@import "features.less";
+@import "site-photos.less";
+@import "photos-list.less";
+@import "footer.less";
+@import "social-list.less";
+
+body {
+  font-family: "Open Sans", "Arial", sans-serif;
+  background: #ffffff;
+  color: #000000;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  // -webkit-clip-path: inset(100%);
+  //         clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.title-text {
+  color: #ffffff;
+  background-color: #000000; // Пока нет фонового изображения
+  font-size: 24px;
+  font-weight: 300;
+  // line-height: 32px; в макете "Auto"
+  text-align: center;
+}
