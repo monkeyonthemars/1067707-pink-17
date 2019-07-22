@@ -1,13 +1,43 @@
 .site-header {
 
-  background-color: #283645;
+  // background-color: @background-blue;
   color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 400px; // Для фонового изображения
 
-  // &__logo {
-  //   //
-  // }
+
+  &__logo {
+    background-color: @background-blue;
+    height: 65px;
+  }
 
   // &__logo-image {
   //   //
   // }
+}
+
+
+@media (min-width: @tablet-width) {
+  .site-header {
+    margin-bottom: 0; // Для фонового изображения
+
+    &__logo {
+      background-color: @background-blue;
+    height: 110px;
+    }
+  }
+}
+
+
+@media (min-width: @desktop-width) {
+  .site-header {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0; // Для фонового изображения
+
+    &__logo {
+      background-color: transparent;
+    }
+  }
 }

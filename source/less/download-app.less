@@ -3,6 +3,14 @@
   background-color: #1d2631;
   color: #ffffff;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  height: 270px;
+  margin-bottom: 40px;
+
+  &__title {
+    display: none; // Спрятать корректно
+  }
 
   &__button {
     color: #ffffff;
@@ -17,6 +25,8 @@
     margin-bottom: 0;
     margin-top: 0;
     padding-left: 0;
+    display: flex;
+    flex-direction: row;
   }
 
   // &__item {
@@ -44,5 +54,33 @@
     font-size: 14px;
     font-weight: 300;
     line-height: 24px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .download-app {
+    height: 620px;
+    width: 340px;
+    margin-bottom: 50px;
+
+    &__title {
+      display: initial;
+      font-size: 40px;
+      font-weight: 300;
+      // line-height: 18px; //Auto
+    }
+  }
+}
+
+
+@media (min-width: @desktop-width) {
+  .download-app {
+    height: 745px;
+    width: 560px;
+    margin-bottom: 65px;
+
+    &__title {
+      font-size: 50px;
+    }
   }
 }
