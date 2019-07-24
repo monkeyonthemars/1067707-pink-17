@@ -1,47 +1,48 @@
 .site-nav {
-
   background-color: @background-blue;
+}
+
+.site-nav__list {
+  display: flex;
+}
+
+.site-nav__link {
+  text-decoration: none;
   color: #ffffff;
 
-  &__toggle {
-    padding: 0;
+  &:hover,
+  &:focus {
+    color: #d22856;
   }
 
-  // &__toggle-image {
-  //   //
-  // }
+  &:active {
+    color: #ffffff;
+    opacity: 0.3;
+  }
+}
 
-  &__list {
+// Mobile
+// @media (min-width: @mobile-width) and (max-width: @tablet-width -1) {
+
+// }
+
+// Mobile + Tablet
+@media (max-width: @desktop-width - 1) {
+  .site-nav__list {
     list-style: none;
-    margin-bottom: 0;
-    margin-top: 0;
-    padding-left: 0;
     text-align: center;
-    display: flex;
     flex-direction: column;
   }
 
-  &__item {
+  .site-nav__item {
     border-top: 1px solid transparent; // В макете текстура, а не цвет
     box-shadow: inset 0 1px 0 #485461;
   }
 
-  &__link {
-    color: #ffffff;
+  .site-nav__link {
     font-size: 18px;
     font-weight: 700;
     line-height: 32px;
-    text-decoration: none;
-
-    &:hover,
-    &:focus {
-      color: #d22856;
-    }
-
-    &:active {
-      color: #ffffff;
-      opacity: 0.3;
-    }
 
     &--active {
       border-bottom: 2px solid #ffffff;
@@ -49,37 +50,35 @@
   }
 }
 
+// Tablet
+// @media (min-width: @tablet-width) and (max-width: @desktop-width - 1) {
 
+// }
+
+// Tablet +
 // @media (min-width: @tablet-width) {
 
 // }
 
-
+// Desktop
 @media (min-width: @desktop-width) {
   .site-nav {
     background-color: transparent;
+  }
 
-    &__toggle {
-      display: none;
-    }
+  .site-nav__toggle {
+    display: none;
+  }
 
-    &__list {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-    }
+  .site-nav__list {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 
-    &__item {
-      border-top: 0; // В макете текстура, а не цвет
-      box-shadow: inset 0 0 0;
-    }
-
-    &__link {
-      font-size: 18px;
-      font-weight: 400;
-      line-height: 18px;
-      text-transform: capitalize;
-      color: red; // Временно
-    }
+  .site-nav__link {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 18px;
+    text-transform: capitalize;
   }
 }

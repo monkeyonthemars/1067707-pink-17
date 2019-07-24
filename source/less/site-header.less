@@ -1,43 +1,42 @@
 .site-header {
-
-  // background-color: @background-blue;
   color: #ffffff;
   display: flex;
-  flex-direction: column;
-  margin-bottom: 400px; // Для фонового изображения
-
-
-  &__logo {
-    background-color: @background-blue;
-    height: 65px;
-  }
-
-  // &__logo-image {
-  //   //
-  // }
+  background-color: transparent;
 }
 
+// Mobile
+@media (min-width: @mobile-width) and (max-width: @tablet-width - 1) {
+  .site-header {
+    margin-bottom: 400px; // Для фонового изображения
+  }
 
+  .site-header__logo {
+    height: 65px;
+  }
+}
+
+// Mobile + Tablet
+// @media (min-width: @mobile-width) and (max-width: @desktop-width - 1) {
+
+// }
+
+// Tablet
+// @media (min-width: @tablet-width) and (max-width: @desktop-width - 1) {
+
+// }
+
+// Tablet +
 @media (min-width: @tablet-width) {
   .site-header {
     margin-bottom: 0; // Для фонового изображения
+  }
 
-    &__logo {
-      background-color: @background-blue;
-      height: 110px;
-    }
+  .site-header__logo {
+    height: 110px; // Для планшета и десктопа
   }
 }
 
+// Desktop
+// @media (min-width: @desktop-width) {
 
-@media (min-width: @desktop-width) {
-  .site-header {
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 0; // Для фонового изображения
-
-    &__logo {
-      background-color: transparent;
-    }
-  }
-}
+// }

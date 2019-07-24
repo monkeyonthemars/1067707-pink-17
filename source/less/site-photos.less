@@ -1,17 +1,42 @@
 .site-photos {
   text-align: center;
+}
 
-  &__title-text {
-    color: #283645;
+.site-photos__title-text {
+  color: #283645;
+  font-weight: 400;
+  // line-height: 30px; // Auto
+}
+
+.site-photos__list {
+  list-style: none;
+}
+
+// Mobile
+@media (min-width: @mobile-width) and (max-width: @tablet-width - 1) {
+  .site-photos__title-text {
     font-size: 14px;
-    font-weight: 400;
-    line-height: 30px;
-  }
-
-  &__list {
-    list-style: none;
-    margin-bottom: 0;
-    margin-top: 0;
-    padding-left: 0;
   }
 }
+
+// Mobile + Tablet
+// @media (min-width: @mobile-width) and (max-width: @desktop-width - 1) {
+
+// }
+
+// Tablet
+// @media (min-width: @tablet-width) and (max-width: @desktop-width - 1) {
+
+// }
+
+// Tablet +
+@media (min-width: @tablet-width) {
+  .site-photos__title-text {
+    font-size: 18px;
+  }
+}
+
+// Desktop
+// @media (min-width: @desktop-width) {
+
+// }

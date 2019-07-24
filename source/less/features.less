@@ -1,106 +1,99 @@
 .features {
   text-align: center;
+}
 
-  // background-image: url("../img/iphone-screen-mobile@1x.png"); Пока не придумал как лучше разместить
-  // background-repeat: no-repeat;
-  // background-position: 0px 0px;
+.features__text { // *
+  background-color: #ffffff;
+  color: #283645;
+  font-weight: 300;
+  // line-height: 18px; В макете "Auto"
+}
 
-  &__text {
-    background-color: #ffffff;
-    color: #283645;
+.features__list { // *
+  display: flex;
+  background-color: #f2f2f2;
+  list-style: none;
+}
+
+.features__title { // *
+  color: #000000;
+}
+
+.features__description {
+  color: #283645;
+  font-weight: 400;
+}
+
+// Mobile
+@media (min-width: @mobile-width) and (max-width: @tablet-width - 1) {
+  .features__text {
     font-size: 24px;
-    font-weight: 300;
-    // line-height: 18px; В макете "Auto"
-    margin-bottom: 30px;
   }
 
-  &__list {
-    background-color: #f2f2f2;
-    list-style: none;
-    margin-bottom: 0;
-    margin-top: 40px; // Для разделителя
-    padding-left: 0;
+  .features__list {
+    // margin-top: 40px; // Для разделителя
     padding-bottom: 280px; // Для фонового изображения
   }
+}
 
-  &__item {
-    padding-top: 15px;
+// Mobile + Tablet
+@media (min-width: @mobile-width) and (max-width: @desktop-width - 1) {
+  .features__list {
+    flex-direction: column;
   }
 
-  &__title {
-    color: #000000;
+  .features__title {
     font-size: 18px;
     font-weight: 700;
     line-height: 24px;
   }
 
-  &__description {
-    color: #283645;
+  .features__description {
     font-size: 14px;
-    font-weight: 400;
     line-height: 24px;
   }
+}
 
-  &__article {
-    display: none; // Сделать невидимость
+// Tablet
+@media (min-width: @tablet-width) and (max-width: @desktop-width - 1) {
+  .features__text {
+    font-size: 40px;
+  }
+
+  .features__list {
+    padding-left: 400px;
+    width: 330px;
+    text-align: left;
   }
 }
 
-@media (min-width: @tablet-width) {
-  .features {
-    &__text {
-      font-size: 40px;
-      font-weight: 300;
-      // line-height: 18px; В макете "Auto"
-      margin-bottom: 0;
-    }
+// Tablet +
+// @media (min-width: @tablet-width) {
 
-    &__list {
-      width: 330px;
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      padding-bottom: 0; // Для фонового изображения
-      // Здесь нужна обертка для фонового изображения?
-    }
+// }
 
-    &__article {
-      display: flex;
-      flex-direction: column;
-      background-color: #f2f2f2;
-      width: 530px;
-    }
-  }
-}
-
-
+// Desktop
 @media (min-width: @desktop-width) {
-  .features {
-    &__text {
-      font-size: 50px;
-      font-weight: 300;
-      // line-height: 18px; В макете "Auto"
-      margin-bottom: 0;
-    }
+  .features__text {
+    font-size: 40px;
+  }
 
-    &__list {
-      width: inherit;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-      padding-bottom: 0; // Для фонового изображения
-      // Здесь нужна обертка для фонового изображения?
-    }
+  .features__list {
+    justify-content: space-around;
+  }
 
-    &__item {
-      margin-top: 350px; // для фоновых изображений
-    }
+  .features__item {
+    margin-top: 350px; // для фоновых изображений
+  }
 
-    &__article {
-      display: flex;
-      flex-direction: column;
-      background-color: #f2f2f2;
-      width: inherit;
-    }
+  .features__title {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 30px;
+  }
+
+  .features__description {
+    font-size: 18px;
+    line-height: 30px;
   }
 }
