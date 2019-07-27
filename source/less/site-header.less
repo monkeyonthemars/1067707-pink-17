@@ -1,13 +1,42 @@
 .site-header {
-
-  background-color: #283645;
   color: #ffffff;
-
-  // &__logo {
-  //   //
-  // }
-
-  // &__logo-image {
-  //   //
-  // }
+  display: flex;
+  background-color: transparent;
 }
+
+// Mobile
+@media (min-width: @mobile-width) and (max-width: @tablet-width - 1) {
+  .site-header {
+    margin-bottom: 400px; // Для фонового изображения
+  }
+
+  .site-header__logo {
+    height: 65px;
+  }
+}
+
+// Mobile + Tablet
+// @media (min-width: @mobile-width) and (max-width: @desktop-width - 1) {
+
+// }
+
+// Tablet
+// @media (min-width: @tablet-width) and (max-width: @desktop-width - 1) {
+
+// }
+
+// Tablet +
+@media (min-width: @tablet-width) {
+  .site-header {
+    margin-bottom: 0; // Для фонового изображения
+  }
+
+  .site-header__logo {
+    height: 110px; // Для планшета и десктопа
+  }
+}
+
+// Desktop
+// @media (min-width: @desktop-width) {
+
+// }
