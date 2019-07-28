@@ -8,27 +8,28 @@
   <body>
 
     <header class="site-header">
-      <a class="site-header__logo" href="#">
-        <img class="site-header__logo-image" src="http://placehold.it/75x22" width="75" height="22" alt="Приложение «Pink»">
-      </a>
-      <nav class="site-nav">
-        <button class="site-nav__toggle" type="button">
-            <img class="site-nav__toggle-image" src="http://placehold.it/50x24" width="50" height="24" alt="Открыть меню">
-        </button>
-        <ul class="site-nav__list">
-          <li class="site-nav__item">
-            <a class="site-nav__link site-nav__link--active">Главная</a>
-          </li>
-          <li class="site-nav__item">
-            <a class="site-nav__link" href="photo.html">Фотографии</a>
-          </li>
-          <li class="site-nav__item">
-            <a class="site-nav__link" href="form.html">Конкурс</a>
-          </li>
-          <li class="site-nav__item">
-            <a class="site-nav__link" href="https://htmlacademy.ru/">HTML Academy</a>
-          </li>
-        </ul>
+      <div class="site-header__logo"> <!-- Переделать -->
+        <a class="site-header__logo-link" href="#">
+          <img class="site-header__logo-image" src="/img/logo-pink-white-mobile.svg" width="75" height="22" alt="Приложение «Pink»">
+        </a>
+      </div>
+      <!-- <nav class="site-nav site-nav--opened"> -->
+      <nav class="site-nav site-nav--closed">
+        <button class="site-nav__toggle" type="button"></button>
+          <ul class="site-nav__list">
+            <li class="site-nav__item">
+              <a class="site-nav__link site-nav__link--active">Главная</a>
+                </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="photo.html">Фотографии</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="form.html">Конкурс</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="https://htmlacademy.ru/">HTML Academy</a>
+            </li>
+          </ul>
       </nav>
     </header>
 
@@ -39,48 +40,79 @@
       <section class="download-app">
         <h2 class="visually-hidden">Скачать приложение</h2>
         <p class="download-app__title">Взгляните на жизнь иначе!</p>
-        <a class="download-app__button" href="#">Скачать приложение</a>
-        <ul class="download-app__list">
-          <li class="download-app__item">
-            <a class="download-app__item-link download-app__item-link--ios" href="#">Скачать версию для iOS</a>
-          </li>
-          <li class="download-app__item">
-            <a class="download-app__item-link download-app__item-link--android" href="#">Скачать версию для Android</a>
-          </li>
-          <li class="download-app__item">
-            <a class="download-app__item-link download-app__item-link--windows" href="#">Скачать версию для Windows 8</a>
-          </li>
-        </ul>
-        <p class="download-app__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        <div class="download-app__container">
+          <a class="download-app__button" href="#">Скачать приложение</a>
+          <ul class="download-app__list">
+            <li class="download-app__item">
+              <a class="download-app__item-link download-app__item-link--ios" href="#">
+                <span class="visually-hidden">Скачать версию для iOS</span>
+                <img class="site-header__logo-image" src="/img/logo-apple.svg" width="47" height="57" alt="Скачать версию для iOS»">
+              </a>
+            </li>
+            <li class="download-app__item">
+              <a class="download-app__item-link download-app__item-link--android" href="#">
+                <span class="visually-hidden">Скачать версию для Android</span>
+                <img class="site-header__logo-image" src="/img/logo-android.svg" width="43" height="47" alt="Скачать версию для iOS»">
+              </a>
+            </li>
+            <li class="download-app__item">
+              <a class="download-app__item-link download-app__item-link--windows" href="#">
+                <span class="visually-hidden">Скачать версию для Windows 8</span>
+                <img class="site-header__logo-image" src="/img/logo-microsoft.svg" width="44" height="42" alt="Скачать версию для iOS»">
+              </a>
+            </li>
+          </ul>
+          <p class="download-app__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        </div>
       </section>
 
       <section class="features">
         <h2 class="visually-hidden">Характеристики приложения</h2>
         <p class="features__text">Устали от серости мегаполиса?</p>
-        <p class="features__text">Нам есть, что вам  предложить!</p>
-        <ul class="features__list">
-          <li class="features__item">
-            <h3 class="features__title">Поднимает настроение</h3>
-            <p class="features__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов</p>
-          </li>
-          <li class="features__item">
-            <h3 class="features__title">Меняет мир вокруг</h3>
-            <p class="features__description">Сделайте снимок и украсьте его смайликом или или текстовой подписью, чтобы усилить эффект</p>
-          </li>
-          <li class="features__item">
-            <h3 class="features__title">Заводит новых друзей</h3>
-            <p class="features__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-          </li>
-        </ul>
-        <!-- Здесь будет фоновое изображение -->
-        <div class="article">
-          <p class="article__title">Эффект на 24 часа!</p>
-          <p class="article__description">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
-          <a class="article__link" href="#">Узнать больше об исследовании</a>
+        <p class="features__text features__text--short">Нам есть, что вам  предложить!</p>
+        <div class="features__container">
+          <ul class="features__list">
+            <li class="features__item features__item--screen-1">
+              <h3 class="features__title">Поднимает настроение</h3>
+              <p class="features__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов</p>
+            </li>
+            <li class="features__item features__item--screen-2">
+              <h3 class="features__title">Меняет мир вокруг</h3>
+              <p class="features__description">Сделайте снимок и украсьте его смайликом или или текстовой подписью, чтобы усилить эффект</p>
+            </li>
+            <li class="features__item features__item--screen-3">
+              <h3 class="features__title">Заводит новых друзей</h3>
+              <p class="features__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+            </li>
+          </ul>
         </div>
       </section>
 
+      <section class="article">
+        <h2 class="visually-hidden">Про нас пишут</h2>
+        <p class="article__title">Эффект на 24 часа!</p>
+        <p class="article__description">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+        <a class="article__link" href="#">Узнать больше об исследовании</a>
+      </section>
+
     </main>
+
+    <script>
+        var navMain = document.querySelector('.site-nav');
+        var navToggle = document.querySelector('.site-nav__toggle');
+
+        // navMain.classList.remove('site-nav--nojs');
+
+        navToggle.addEventListener('click', function() {
+          if (navMain.classList.contains('site-nav--closed')) {
+            navMain.classList.remove('site-nav--closed');
+            navMain.classList.add('site-nav--opened');
+          } else {
+            navMain.classList.add('site-nav--closed');
+            navMain.classList.remove('site-nav--opened');
+          }
+        });
+      </script>
 
   </body>
 </html>

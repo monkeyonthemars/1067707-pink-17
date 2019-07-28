@@ -21,7 +21,7 @@ body {
 }
 
 .visually-hidden {
-  position: absolute;
+  position: absolute; // ??
   width: 1px;
   height: 1px;
   margin: -1px;
@@ -44,6 +44,14 @@ body {
 
 // Mobile
 @media (min-width: @mobile-width) and (max-width: @tablet-width - 1) {
+  body {
+    background-image: url("../img/bg-back-mobile@1x.jpg");
+    // background-repeat: no-repeat; // Временно
+    background-position: center 0;
+    background-color: transparent;
+    width: 100%;
+  }
+
   .title-text {
     font-size: 24px;
     height: 170px;
@@ -57,6 +65,14 @@ body {
 
 // Tablet
 @media (min-width: @tablet-width) and (max-width: @desktop-width - 1) {
+  body {
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    // background-repeat: no-repeat; // Временно
+    background-position: center 0;
+    background-color: transparent;
+    width: 100%;
+  }
+
   .title-text {
     height: 330px;
   }
@@ -71,6 +87,14 @@ body {
 
 // Desktop
 @media (min-width: @desktop-width) {
+  body {
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+    // background-repeat: no-repeat; // Временно
+    background-position: center 0;
+    background-color: transparent;
+    width: 100%;
+  }
+
   .title-text {
     height: 285px;
   }

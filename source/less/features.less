@@ -1,5 +1,9 @@
 .features {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  align-items: center;
 }
 
 .features__text { // *
@@ -26,13 +30,35 @@
 
 // Mobile
 @media (min-width: @mobile-width) and (max-width: @tablet-width - 1) {
+  .features {
+    align-items: center;
+  }
+
   .features__text {
     font-size: 24px;
+    padding-top: 40px;
+    width: 300px;
+  }
+
+  .features__container {
+    padding-top: 110px; // Для разделителя
+    background-image: url("../img/bg-triangle-white.svg");
+    background-repeat: no-repeat;
+    background-position: center 0;
+    background-color: #f2f2f2;
+    width: 100%;
   }
 
   .features__list {
-    // margin-top: 40px; // Для разделителя
-    padding-bottom: 280px; // Для фонового изображения
+    align-items: center;
+    padding-bottom: 300px;
+    background-image: url("../img/iphone-screen-mobile@1x.png");
+    background-repeat: no-repeat;
+    background-position: center 310px;
+  }
+
+  .features__item {
+    width: 280px;
   }
 }
 
@@ -56,26 +82,70 @@
 
 // Tablet
 @media (min-width: @tablet-width) and (max-width: @desktop-width - 1) {
+  .features {
+    padding-top: 55px;
+  }
+
   .features__text {
     font-size: 40px;
+    line-height: 55px;
+  }
+
+  .features__container {
+    margin-left: 20px; // z-index? пока очень криво выглядит
+    padding-top: 60px; // Для разделителя
+    background-image: url("../img/bg-triangle-white.svg");
+    background-repeat: no-repeat; // Временно
+    background-position: center 0; // center ??
+    background-color: #f2f2f2;
+    // background-color: red;
+    width: 100%;
   }
 
   .features__list {
     padding-left: 400px;
-    width: 330px;
+    height: 480px;
     text-align: left;
+    background-image: url("../img/iphone-screen-3-tablet@1x.png");
+    background-repeat: no-repeat; // Временно
+    background-position: left 0; // center ??
+  }
+
+  .features__title {
+    margin-bottom: 15px;
+  }
+
+  .features__description {
+    margin-bottom: 40px;
   }
 }
 
 // Tablet +
-// @media (min-width: @tablet-width) {
-
-// }
+@media (min-width: @tablet-width) {
+  .features__text {
+    &--short {
+      width: 400px;
+    }
+  }
+}
 
 // Desktop
 @media (min-width: @desktop-width) {
+  .features {
+    padding-top: 75px;
+  }
+
   .features__text {
     font-size: 40px;
+    line-height: 50px;
+  }
+
+  .features__container {
+    padding-top: 100px;
+    background-image: url("../img/bg-triangle-white.svg");
+    background-repeat: no-repeat; // Временно
+    background-position: center 0; // center ??
+    background-color: #f2f2f2;
   }
 
   .features__list {
@@ -83,7 +153,26 @@
   }
 
   .features__item {
-    margin-top: 350px; // для фоновых изображений
+    padding-top: 350px; // для фоновых изображений
+
+    // Доделать, сейчас нет наложения
+    &--screen-1 {
+      background-image: url("../img/iphone-screen-1-desktop@1x.png");
+      background-repeat: no-repeat; // Временно
+      background-position: center 0; // center ??
+    }
+
+    &--screen-2 {
+      background-image: url("../img/iphone-screen-2-desktop@1x.png");
+      background-repeat: no-repeat; // Временно
+      background-position: center 0; // center ??
+    }
+
+    &--screen-3 {
+      background-image: url("../img/iphone-screen-3-desktop@1x.png");
+      background-repeat: no-repeat; // Временно
+      background-position: center 0; // center ??
+    }
   }
 
   .features__title {
