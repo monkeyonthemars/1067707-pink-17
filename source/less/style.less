@@ -21,7 +21,7 @@ body {
 }
 
 .visually-hidden {
-  position: absolute;
+  position: absolute; // ??
   width: 1px;
   height: 1px;
   margin: -1px;
@@ -36,7 +36,7 @@ body {
 
 .title-text {
   color: #ffffff;
-  background-color: #000000; // Пока нет фонового изображения
+  background-color: transparent;
   font-weight: 300;
   // line-height: 32px; в макете "Auto"
   text-align: center;
@@ -44,9 +44,18 @@ body {
 
 // Mobile
 @media (min-width: @mobile-width) and (max-width: @tablet-width - 1) {
+  body {
+    background-image: url("../img/bg-back-mobile@1x.jpg");
+    // background-repeat: no-repeat; // Временно
+    background-position: center 0;
+    background-color: transparent;
+    width: 100%;
+  }
+
   .title-text {
     font-size: 24px;
-    height: 170px;
+    padding-top: 35px;
+    padding-bottom: 85px;
   }
 }
 
@@ -57,8 +66,18 @@ body {
 
 // Tablet
 @media (min-width: @tablet-width) and (max-width: @desktop-width - 1) {
+  body {
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    // background-repeat: no-repeat; // Временно
+    background-position: center 0;
+    background-color: transparent;
+    width: 100%;
+  }
+
   .title-text {
-    height: 330px;
+    padding-top: 80px;
+    padding-bottom: 140px;
+    line-height: 60px;
   }
 }
 
@@ -71,7 +90,16 @@ body {
 
 // Desktop
 @media (min-width: @desktop-width) {
+  body {
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+    // background-repeat: no-repeat; // Временно
+    background-position: center 0;
+    background-color: transparent;
+    width: 100%;
+  }
+
   .title-text {
-    height: 285px;
+    padding-top: 75px;
+    padding-bottom: 105px;
   }
 }

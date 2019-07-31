@@ -1,5 +1,6 @@
 .site-photos {
   text-align: center;
+  background-color: #ffffff;
 }
 
 .site-photos__title-text {
@@ -16,6 +17,8 @@
 @media (min-width: @mobile-width) and (max-width: @tablet-width - 1) {
   .site-photos__title-text {
     font-size: 14px;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 }
 
@@ -25,14 +28,20 @@
 // }
 
 // Tablet
-// @media (min-width: @tablet-width) and (max-width: @desktop-width - 1) {
-
-// }
+@media (min-width: @tablet-width) and (max-width: @desktop-width - 1) {
+  .site-photos__title-text {
+    font-size: 14px;
+    padding-top: 100px;
+    padding-bottom: 80px;
+  }
+}
 
 // Tablet +
 @media (min-width: @tablet-width) {
   .site-photos__title-text {
     font-size: 18px;
+    padding-top: 100px;
+    padding-bottom: 90px;
   }
 }
 

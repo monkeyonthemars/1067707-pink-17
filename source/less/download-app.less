@@ -1,5 +1,4 @@
 .download-app {
-  background-color: #1d2631;
   color: #ffffff;
   text-align: center;
   display: flex;
@@ -11,17 +10,32 @@
   // line-height: 18px; //Auto
 }
 
+.download-app__container {
+  width: 100%;
+}
+
 .download-app__button { // *
+  display: inline-block;
   color: #ffffff;
   font-weight: 700;
   line-height: 18px;
   text-decoration: none;
+  border: 3px solid #ffffff;
+  border-radius: 27px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 280px;
 }
 
 .download-app__list { // *
   list-style: none;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  width: 205px;
+  align-items: center;
 }
 
 .download-app__item-link { // *
@@ -38,16 +52,39 @@
 // Mobile
 @media (min-width: @mobile-width) and (max-width: @tablet-width - 1) {
   .download-app {
-    height: 270px;
-    margin-bottom: 40px;
+    align-items: center;
   }
 
   .download-app__title {
-    display: none; // Спрятать корректно
+    font-size: 24px;
+    padding-top: 30px;
+    padding-bottom: 320px;
+    background-image: url("../img/iphone-hand-mobile@1x.png");
+    background-repeat: no-repeat; // Временно
+    background-position: center 112px; // center ??
+    width: 250px;
+  }
+
+  .download-app__container {
+    padding-top: 28px;
+    background-color: #1d2631;
+  }
+
+  .download-app__button {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+
+  .download-app__list {
+    margin-left: 55px;
+    margin-right: 55px;
+    margin-bottom: 25px;
   }
 
   .download-app__text {
+    display: inline-block;
     font-size: 14px;
+    width: 250px;
   }
 }
 
@@ -62,17 +99,47 @@
 @media (min-width: @tablet-width) and (max-width: @desktop-width - 1) {
   .download-app {
     height: 620px;
-    width: 340px;
-    margin-bottom: 50px;
+    background-image: url("../img/iphone-hand-tablet@1x.png");
+    background-repeat: no-repeat; // Временно
+    background-position: center 112px; // center ??
   }
 
   .download-app__title {
     font-size: 40px;
+    line-height: 52px; //Auto
+    margin-top: 105px;
+    margin-bottom: 20px;
+  }
+
+  .download-app__button {
+    margin-bottom: 40px;
+  }
+
+  .download-app__list {
+    margin-bottom: 40px;
   }
 }
 
 // Tablet +
 @media (min-width: @tablet-width) {
+  .download-app {
+    margin-left: 20px;
+  }
+
+  .download-app__title {
+    width: 240px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .download-app__container {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    width: 300px;
+  }
+
   .download-app__text {
     font-size: 18px;
   }
@@ -82,15 +149,25 @@
 @media (min-width: @desktop-width) {
   .download-app {
     height: 745px;
-    width: 560px;
-    margin-bottom: 65px;
+    // margin-bottom: 65px;
+    background-image: url("../img/iphone-hand-desktop@1x.png");
+    background-repeat: no-repeat; // Временно
+    background-position: center 112px; // center ??
   }
 
   .download-app__title {
     font-size: 50px;
+    line-height: 60px;
+    margin-top: 110px;
+    margin-bottom: 50px;
   }
 
   .download-app__button {
     font-size: 21px;
+    margin-bottom: 70px;
+  }
+
+  .download-app__list {
+    margin-bottom: 50px;
   }
 }
