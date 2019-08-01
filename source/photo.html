@@ -10,7 +10,11 @@
     <header class="site-header">
       <div class="site-header__logo"> <!-- Переделать -->
         <a class="site-header__logo-link" href="index.html">
-          <img class="site-header__logo-image" src="/img/logo-pink-white-mobile.svg" width="75" height="22" alt="Приложение «Pink»">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
+            <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+            <img class="site-header__logo-image" src="/img/logo-pink-white-mobile.svg" width="146.3" height="40.375" alt="Приложение «Pink»">
+          </picture>
         </a>
       </div>
       <!-- <nav class="site-nav site-nav--opened"> -->
@@ -43,7 +47,11 @@
         <ul class="site-photos__list photos-list">
           <li class="photos-list__item photos-list__item--full">
             <a class="photos-list__link" href="#">
-              <img class="photos-list__image photos-list__image--full" src="/img/panorama-desktop@1x.jpg" width="320" height="137" alt="Панорама дня">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="/img/panorama-desktop@1x.jpg 1x, /img/panorama-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="/img/panorama-tablet@1x.jpg 1x, /img/panorama-tablet@2x.jpg 2x">
+                <img class="photos-list__image photos-list__image--full" src="/img/panorama-mobile@1x.jpg" srcset="/img/photo-car-mobile@2x.jpg 2x" width="320" height="137" alt="Панорама дня">
+              </picture>
             </a>
             <p class="photos-list__highlight">Панорама дня</p>
             <p class="photos-list__title photos-list__title--full"><b class="photos-list__author">Анна</b> (5 минут назад)</p>
@@ -53,7 +61,11 @@
           </li>
           <li class="photos-list__item">
             <a class="photos-list__link" href="#">
-              <img class="photos-list__image" src="/img/photo-car-desktop@1x.jpg" width="280" height="180" alt="Фото 1">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="/img/photo-car-desktop@1x.jpg 1x, /img/photo-car-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="/img/photo-car-tablet@1x.jpg 1x, /img/photo-car-tablet@2x.jpg 2x">
+                <img class="photos-list__image" src="/img/photo-car-mobile@1x.jpg" srcset="/img/photo-car-mobile@2x.jpg 2x" width="280" height="180" alt="Фото 1">
+              </picture>
             </a>
             <p class="photos-list__title"><b class="photos-list__author">Левон</b> (5 часов назад)</p>
             <p class="photos-list__description">Вчера он на луну летал, сегодня в руки к нам попал.</p>
@@ -62,7 +74,11 @@
           </li>
           <li class="photos-list__item">
             <a class="photos-list__link" href="#">
-              <img class="photos-list__image" src="/img/photo-drumset-desktop@1x.jpg" width="280" height="180" alt="Фото 2">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="/img/photo-drumset-desktop@1x.jpg 1x, /img/photo-drumset-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="/img/photo-drumset-tablet@1x.jpg 1x, /img/photo-drumset-tablet@2x.jpg 2x">
+                <img class="photos-list__image" src="/img/photo-drumset-mobile@1x.jpg" srcset="/img/photo-drumset-mobile@2x.jpg 2x" width="280" height="180" alt="Фото 1">
+              </picture>
             </a>
             <p class="photos-list__title"><b class="photos-list__author">Антон</b> (12 часов назад)</p>
             <p class="photos-list__description">Соседи будут рады!</p>
@@ -71,7 +87,11 @@
           </li>
           <li class="photos-list__item">
             <a class="photos-list__link" href="#">
-              <img class="photos-list__image" src="/img/photo-window-desktop@1x.jpg" width="280" height="180" alt="Фото 3">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="/img/photo-window-desktop@1x.jpg 1x, /img/photo-window-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="/img/photo-window-tablet@1x.jpg 1x, /img/photo-window-tablet@2x.jpg 2x">
+                <img class="photos-list__image" src="/img/photo-window-mobile@1x.jpg" srcset="/img/photo-window-mobile@2x.jpg 2x" width="280" height="180" alt="Фото 1">
+              </picture>
             </a>
             <p class="photos-list__title"><b class="photos-list__author">Борис</b> (20 часов назад)</p>
             <p class="photos-list__description">Здесь могла быть ваша цитата о высоком и вечном.</p>
@@ -80,7 +100,11 @@
           </li>
           <li class="photos-list__item">
             <a class="photos-list__link" href="#">
-              <img class="photos-list__image" src="/img/photo-fair-desktop@1x.jpg" width="280" height="180" alt="Фото 4">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="/img/photo-fair-desktop@1x.jpg 1x, /img/photo-fair-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="/img/photo-fair-tablet@1x.jpg 1x, /img/photo-fair-tablet@2x.jpg 2x">
+                <img class="photos-list__image" src="/img/photo-fair-mobile@1x.jpg" srcset="/img/photo-fair-mobile@2x.jpg 2x" width="280" height="180" alt="Фото 1">
+              </picture>
             </a>
             <p class="photos-list__title"><b class="photos-list__author">Сергей</b> (25 часов назад)</p>
             <p class="photos-list__description">Самая кубанская в мире!</p>
@@ -89,7 +113,11 @@
           </li>
           <li class="photos-list__item">
             <a class="photos-list__link" href="#">
-              <img class="photos-list__image" src="/img/photo-pov-desktop@1x.jpg" width="280" height="180" alt="Фото 5">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="/img/photo-pov-desktop@1x.jpg 1x, /img/photo-pov-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="/img/photo-pov-tablet@1x.jpg 1x, /img/photo-pov-tablet@2x.jpg 2x">
+                <img class="photos-list__image" src="/img/photo-pov-mobile@1x.jpg" srcset="/img/photo-pov-mobile@2x.jpg 2x" width="280" height="180" alt="Фото 1">
+              </picture>
             </a>
             <p class="photos-list__title"><b class="photos-list__author">Максим</b> (40 часов назад)</p>
             <p class="photos-list__description">Где снег-то?</p>
@@ -98,7 +126,11 @@
           </li>
           <li class="photos-list__item">
             <a class="photos-list__link" href="#">
-              <img class="photos-list__image" src="/img/photo-wing-desktop@1x.jpg" width="280" height="180" alt="Фото 5">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="/img/photo-wing-desktop@1x.jpg 1x, /img/photo-wing-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="/img/photo-wing-tablet@1x.jpg 1x, /img/photo-wing-tablet@2x.jpg 2x">
+                <img class="photos-list__image" src="/img/photo-wing-mobile@1x.jpg" srcset="/img/photo-wing-mobile@2x.jpg 2x" width="280" height="180" alt="Фото 1">
+              </picture>
             </a>
             <p class="photos-list__title"><b class="photos-list__author">Надежда</b> (45 часов назад)</p>
             <p class="photos-list__description">Всем GM и взаимные лайки!</p>
@@ -112,7 +144,10 @@
     </main>
 
     <footer class="footer">
-      <img class="footer__logo-pink" src="/img/logo-pink-blue-desktop.svg" width="147" height="40" alt="Pink">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/logo-pink-blue-desktop.svg">
+        <img class="footer__logo-pink" src="/img/logo-pink-blue-mobile.svg" width="146.3" height="40.375" alt="Pink">
+      </picture>
       <ul class="footer__social social-list">
         <li class="social-list__item">
           <a class="social-list__link social-list__link--twitter" href="https://twitter.com">

@@ -46,7 +46,7 @@ body {
 @media (min-width: @mobile-width) and (max-width: @tablet-width - 1) {
   body {
     background-image: url("../img/bg-back-mobile@1x.jpg");
-    // background-repeat: no-repeat; // Временно
+    background-repeat: no-repeat;
     background-position: center 0;
     background-color: transparent;
     width: 100%;
@@ -56,6 +56,13 @@ body {
     font-size: 24px;
     padding-top: 35px;
     padding-bottom: 85px;
+  }
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    body {
+      background-image: url("../img/bg-back-mobile@2x.jpg");
+      background-size: 640px auto;
+    }
   }
 }
 
@@ -68,7 +75,7 @@ body {
 @media (min-width: @tablet-width) and (max-width: @desktop-width - 1) {
   body {
     background-image: url("../img/bg-back-tablet@1x.jpg");
-    // background-repeat: no-repeat; // Временно
+    background-repeat: no-repeat;
     background-position: center 0;
     background-color: transparent;
     width: 100%;
@@ -78,6 +85,13 @@ body {
     padding-top: 80px;
     padding-bottom: 140px;
     line-height: 60px;
+  }
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    body {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+      background-size: 2400px auto;
+    }
   }
 }
 
@@ -92,7 +106,7 @@ body {
 @media (min-width: @desktop-width) {
   body {
     background-image: url("../img/bg-back-desktop@1x.jpg");
-    // background-repeat: no-repeat; // Временно
+    background-repeat: no-repeat;
     background-position: center 0;
     background-color: transparent;
     width: 100%;
@@ -101,5 +115,12 @@ body {
   .title-text {
     padding-top: 75px;
     padding-bottom: 105px;
+  }
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    body {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+      background-size: 5120px auto;
+    }
   }
 }
