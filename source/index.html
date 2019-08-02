@@ -10,7 +10,11 @@
     <header class="site-header">
       <div class="site-header__logo"> <!-- Переделать -->
         <a class="site-header__logo-link" href="#">
-          <img class="site-header__logo-image" src="/img/logo-pink-white-mobile.svg" width="75" height="22" alt="Приложение «Pink»">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
+            <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+            <img class="site-header__logo-image" src="/img/logo-pink-white-mobile.svg" width="146.3" height="40.375" alt="Приложение «Pink»">
+          </picture>
         </a>
       </div>
       <!-- <nav class="site-nav site-nav--opened"> -->
@@ -52,13 +56,13 @@
             <li class="download-app__item">
               <a class="download-app__item-link download-app__item-link--android" href="#">
                 <span class="visually-hidden">Скачать версию для Android</span>
-                <img class="site-header__logo-image" src="/img/logo-android.svg" width="43" height="47" alt="Скачать версию для iOS»">
+                <img class="site-header__logo-image" src="/img/logo-android.svg" width="43" height="47" alt="Скачать версию для Android»">
               </a>
             </li>
             <li class="download-app__item">
               <a class="download-app__item-link download-app__item-link--windows" href="#">
                 <span class="visually-hidden">Скачать версию для Windows 8</span>
-                <img class="site-header__logo-image" src="/img/logo-microsoft.svg" width="44" height="42" alt="Скачать версию для iOS»">
+                <img class="site-header__logo-image" src="/img/logo-microsoft.svg" width="44" height="42" alt="Скачать версию для Windows 8»">
               </a>
             </li>
           </ul>
