@@ -4,6 +4,23 @@
 
 // .site-nav__toggle {};
 
+.site-nav__menu-burger,
+.site-nav__menu-cross {
+  fill: #ffffff;
+}
+
+.site-nav__menu-burger:hover,
+.site-nav__menu-burger:focus,
+.site-nav__menu-cross:hover,
+.site-nav__menu-cross:focus {
+  fill: @color-pink;
+}
+
+.site-nav__menu-burger:active,
+.site-nav__menu-cross:active {
+  opacity: 0.3;
+}
+
 .site-nav__list {
   text-align: center;
   list-style: none;
@@ -25,7 +42,7 @@
 
   &:hover:not(.site-nav__link--active),
   &:focus:not(.site-nav__link--active) {
-    color: #d22856;
+    color: @color-pink;
   }
 
   &:active:not(.site-nav__link--active) {
@@ -62,24 +79,21 @@
   .site-nav__toggle {
     position: absolute;
     display: block;
-    width: 24px;
-    height: 24px;
+    width: 23.867px;
+    height: 23.867px;
     right: 20px;
-    background-image: url("../img/icon-menu-cross.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
     cursor: pointer;
     border: none;
     background-color: transparent;
     padding: 0; // reset-size
-    text-indent: -100px;
-    overflow: hidden;
+    // text-indent: -100px;
+    // overflow: hidden;
+    font-size: 0;
   }
 
   .site-nav--closed .site-nav__toggle {
-    width: 50px;
-    height: 24px;
-    background-image: url("../img/icon-menu-burger.svg");
+    width: 49.945px;
+    height: 24.007px;
   }
 
   // .site-nav__list {}

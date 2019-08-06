@@ -8,17 +8,29 @@
   <body>
 
     <header class="site-header">
-      <div class="site-header__logo">
-        <a class="site-header__logo-link" href="index.html">
-          <picture>
-            <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
-            <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
-            <img class="site-header__logo-image" src="/img/logo-pink-white-mobile.svg" width="146.3" height="40.375" alt="Приложение «Pink»">
-          </picture>
-        </a>
-      </div>
-      <nav class="site-nav">
-        <button class="site-nav__toggle" type="button"></button>
+        <div class="site-header__logo">
+          <a class="site-header__logo-link" href="index.html">
+            <svg class="site-header__logo-mobile" width="74.426" height="22.859">
+              <use xlink:href="/img/sprite.svg#site-header__logo-mobile"></use>
+            </svg>
+            <svg class="site-header__logo-tablet" width="146.3" height="40.375">
+              <use xlink:href="/img/sprite.svg#site-header__logo-tablet"></use>
+            </svg>
+            <svg class="site-header__logo-desktop" width="146.3" height="40.375">
+              <use xlink:href="/img/sprite.svg#site-header__logo-desktop"></use>
+            </svg>
+          </a>
+        </div>
+        <nav class="site-nav">
+          <button class="site-nav__toggle" type="button">
+            Меню
+            <svg class="site-nav__menu-burger" width="49.945" height="24.007">
+              <use xlink:href="/img/sprite.svg#site-nav__menu-burger"></use>
+            </svg>
+            <svg class="site-nav__menu-cross" width="23.867" height="23.867">
+              <use xlink:href="/img/sprite.svg#site-nav__menu-cross"></use>
+            </svg>
+          </button>
           <ul class="site-nav__list">
             <li class="site-nav__item">
               <a class="site-nav__link" href="index.html">Главная</a>

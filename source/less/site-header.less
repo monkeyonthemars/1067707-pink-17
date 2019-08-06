@@ -10,6 +10,28 @@
   overflow: hidden; // Не уверен что работает как надо
 }
 
+.site-header__logo-mobile,
+.site-header__logo-tablet,
+.site-header__logo-desktop {
+  fill: #ffffff;
+}
+
+.site-header__logo-mobile:hover,
+.site-header__logo-mobile:focus,
+.site-header__logo-tablet:hover,
+.site-header__logo-tablet:focus,
+.site-header__logo-desktop:hover,
+.site-header__logo-desktop:focus {
+  fill: @color-pink;
+}
+
+.site-header__logo-mobile:active,
+.site-header__logo-tablet:active,
+.site-header__logo-desktop:active {
+  fill: #ffffff;
+  opacity: 0.3;
+}
+
 // .site-header__logo-link {
 //   &:hover path,
 //   &:focus path {
@@ -36,9 +58,21 @@
 
   // .site-header__logo-link {};
 
-  .site-header__logo-image {
-    width: 74.426px;
-    height: 22.859px;
+  // .site-header__logo-image {
+  //   width: 74.426px;
+  //   height: 22.859px;
+  // }
+
+  .site-header__logo-mobile {
+    display: inline-block;
+  }
+
+  .site-header__logo-tablet {
+    display: none;
+  }
+
+  .site-header__logo-desktop {
+    display: none;
   }
 }
 
@@ -60,6 +94,18 @@
   // .site-header__logo-link {};
 
   // .site-header__logo-image {};
+
+  .site-header__logo-mobile {
+    display: none;
+  }
+
+  .site-header__logo-tablet {
+    display: inline-block;
+  }
+
+  .site-header__logo-desktop {
+    display: none;
+  }
 }
 
 @media @tablet-plus-desktop {
@@ -72,10 +118,10 @@
 
   // .site-header__logo-link {};
 
-  .site-header__logo-image {
-    width: 146.3px;
-    height: 40.375px;
-  }
+  // .site-header__logo-image {
+  //   width: 146.3px;
+  //   height: 40.375px;
+  // }
 }
 
 @media @desktop-only {
@@ -91,4 +137,16 @@
   // .site-header__logo-link {};
 
   // .site-header__logo-image {};
+
+  .site-header__logo-mobile {
+    display: none;
+  }
+
+  .site-header__logo-tablet {
+    display: none;
+  }
+
+  .site-header__logo-desktop {
+    display: inline-block;
+  }
 }
