@@ -1,63 +1,153 @@
 .site-header {
-  color: #ffffff;
-  display: flex;
+  display: inline-block;
   position: relative;
-  background-color: rgba(40, 54, 69, 0.7);
+  background-color: @background-gray;
+  z-index: 2;
 }
 
-// Mobile
-@media (min-width: @mobile-width) and (max-width: @tablet-width - 1) {
-  .site-header__logo {
-    padding-top: 22px;
-    padding-left: 20px;
-    padding-bottom: 22px;
-    height: 22px; // ??
-  }
-
-  .site-header__logo-image {
-    width: 74.426px;
-    height: 22.859px;
-  }
+.site-header__logo {
+  display: block;
+  box-sizing: border-box;
+  // overflow: hidden; // Не уверен что работает как надо
 }
 
-// Mobile + Tablet
-@media (min-width: @mobile-width) and (max-width: @desktop-width - 1) {
-  .site-header {
-    flex-direction: column;
-    justify-content: space-between;
-  }
+.site-header__logo-mobile,
+.site-header__logo-tablet,
+.site-header__logo-desktop {
+  fill: #ffffff;
 }
 
-// Tablet
-@media (min-width: @tablet-width) and (max-width: @desktop-width - 1) {
-  .site-header {
-    height: 110px; // Временно ??
-  }
-
-  .site-header__logo {
-    padding-top: 25px;
-    padding-left: 130px;
-    padding-bottom: 42px;
-    // height: 22px; // ??
-  }
+.site-header__logo-mobile:hover,
+.site-header__logo-mobile:focus,
+.site-header__logo-tablet:hover,
+.site-header__logo-tablet:focus,
+.site-header__logo-desktop:hover,
+.site-header__logo-desktop:focus {
+  fill: @color-pink;
 }
 
-// Tablet +
-// @media (min-width: @tablet-width) {
+.site-header__logo-mobile:active,
+.site-header__logo-tablet:active,
+.site-header__logo-desktop:active {
+  fill: #ffffff;
+  opacity: 0.3;
+}
 
+// .site-header__logo-link {
+//   &:hover path,
+//   &:focus path {
+//     fill: #d22856;
+//   }
+
+//   &:active path {
+//     fill: @background-gray;
+//     opacity: 0.3;
+//   }
 // }
 
-// Desktop
-@media (min-width: @desktop-width) {
+// .site-header__logo-image {};
+
+@media @mobile-only {
   .site-header {
-    height: 110px;
-    align-items: center;
+    width: @mobile-width;
   }
 
   .site-header__logo {
-    margin-top: 26px;
-    margin-left: 130px;
-    margin-bottom: 42px;
-    height: 22px; // ??
+    padding-top: 22px;
+    height: 66px;
+  }
+
+  // .site-header__logo-link {};
+
+  // .site-header__logo-image {
+  //   width: 74.426px;
+  //   height: 22.859px;
+  // }
+
+  .site-header__logo-mobile {
+    display: inline-block;
+  }
+
+  .site-header__logo-tablet {
+    display: none;
+  }
+
+  .site-header__logo-desktop {
+    display: none;
+  }
+}
+
+@media @mobile-plus-tablet {
+  // .site-header {};
+
+  .site-header__logo {
+    padding-left: 20px;
+  }
+}
+
+@media @tablet-only {
+  .site-header {
+    width: @tablet-width;
+  }
+
+  // .site-header__logo {};
+
+  // .site-header__logo-link {};
+
+  // .site-header__logo-image {};
+
+  .site-header__logo-mobile {
+    display: none;
+  }
+
+  .site-header__logo-tablet {
+    display: inline-block;
+  }
+
+  .site-header__logo-desktop {
+    display: none;
+  }
+}
+
+@media @tablet-plus-desktop {
+  // .site-header {};
+
+  .site-header__logo {
+    padding-top: 27px;
+    height: 110px;
+  }
+
+  // .site-header__logo-link {};
+
+  // .site-header__logo-image {
+  //   width: 146.3px;
+  //   height: 40.375px;
+  // }
+}
+
+@media @desktop-only {
+  .site-header {
+    width: @desktop-width;
+    display: flex;
+  }
+
+  .site-header__logo {
+    padding-left: 130px;
+  }
+
+  // .site-header__logo-link {};
+
+  // .site-header__logo-image {};
+
+  .site-header__logo-mobile {
+    display: none;
+  }
+
+  .site-header__logo-tablet {
+    display: none;
+  }
+
+  .site-header__logo-desktop {
+    display: inline-block;
   }
 }

@@ -1,7 +1,26 @@
 @background-blue: #283645;
-
+@background-gray: rgba(40, 54, 69, 0.7);
+@color-pink: #d22856;
+@color-pink-opacity: rgba(210, 40, 86, 0.3);
 @mobile-width: 320px;
 @tablet-width: 660px;
 @desktop-width: 1200px;
 @retina-dpi: 144dpi;
 @retina-dppx: 1.5dppx;
+
+@mobile-only: ~"(max-width: 659px)";
+// (max-width: @tablet-width - 1);
+
+@mobile-plus-tablet: ~"(min-width: 320px) and (max-width: 1199px)";
+// (min-width: @mobile-width) and (max-width: @desktop-width - 1)
+
+@tablet-only: ~"(min-width: 660px) and (max-width: 1199px)";
+// (min-width: @tablet-width) and (max-width: @desktop-width - 1)
+
+@tablet-plus-desktop: ~"(min-width: 660px)";
+// (min-width: @tablet-width)
+
+@desktop-only: ~"(min-width: 1200px)";
+// (min-width: @desktop-width)
+
+@retina: ~"(min-resolution: 144dpi), (min-resolution: 1.5dppx)";
