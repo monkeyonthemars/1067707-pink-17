@@ -1,24 +1,52 @@
-// Mobile
-@media (min-width: @mobile-width) and (max-width: @tablet-width - 1) {
+// .footer {}
+
+// .footer__logo-pink {}
+
+// .footer__social {}
+
+// .footer__text {}
+
+// .footer__academy-link {}
+
+// .footer__academy-image {}
+
+@media @mobile-only {
   .footer {
-    display: none; // Переделать
+    display: none;
   }
+
+  // .footer__logo-pink {}
+
+  // .footer__social {}
+
+  // .footer__text {}
+
+  // .footer__academy-link {}
+
+  // .footer__academy-image {}
 }
 
-// Mobile + Tablet
-// @media (min-width: @mobile-width) and (max-width: @desktop-width - 1) {
+// @media @mobile-plus-tablet {}
 
-// }
+@media @tablet-only {
+  .footer {
+    width: @tablet-width;
+  }
 
-// Tablet
-@media (min-width: @tablet-width) and (max-width: @desktop-width - 1) {
+  // .footer__logo-pink {}
+
+  // .footer__social {}
+
   .footer__text {
     font-size: 14px;
   }
+
+  // .footer__academy-link {}
+
+  // .footer__academy-image {}
 }
 
-// Tablet +
-@media (min-width: @tablet-width) {
+@media @tablet-plus-desktop {
   .footer {
     background-color: #ffffff;
     text-align: center;
@@ -29,6 +57,8 @@
     padding-top: 35px;
     padding-bottom: 35px;
   }
+
+  // .footer__logo-pink {}
 
   .footer__social {
     list-style: none;
@@ -42,11 +72,27 @@
     font-weight: 400;
     line-height: 18px;
   }
+
+  // .footer__academy-link {}
+
+  // .footer__academy-image {}
 }
 
 // Desktop
-@media (min-width: @desktop-width) {
+@media @desktop-only {
+  .footer {
+    width: @desktop-width;
+  }
+
+  // .footer__logo-pink {}
+
+  // .footer__social {}
+
   .footer__text {
     font-size: 18px;
   }
+
+  // .footer__academy-link {}
+
+  // .footer__academy-image {}
 }
