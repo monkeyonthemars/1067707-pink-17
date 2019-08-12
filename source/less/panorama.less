@@ -6,10 +6,12 @@
 
 // .panorama__link {}
 
-// .panorama__image {}
+.panorama__image {
+  display: block;
+}
 
 .panorama__container {
-  position: absolute; // TODO
+  position: relative;
   background-color: #f2f2f2;
 }
 
@@ -83,7 +85,6 @@
 @media @mobile-only {
   .panorama {
     width: @mobile-width;
-    margin-bottom: 185px; // TODO
   }
 
   // .panorama__link {}
@@ -95,7 +96,6 @@
     margin-right: 20px;
     padding-left: 18px;
     padding-right: 20px;
-    top: 137px; // TODO
   }
 
   .panorama__title {
@@ -109,7 +109,7 @@
   }
 
   .panorama__button-like {
-    left: 12px;
+    left: 18px;
     bottom: 22px;
   }
 
@@ -124,7 +124,6 @@
 @media @tablet-only {
   .panorama {
     width: @tablet-width;
-    margin-bottom: 163px; // TODO
   }
 
   // .panorama__link {}
@@ -142,8 +141,6 @@
     margin-left: 20px;
     margin-right: 20px;
     padding-left: 28px;
-    padding-right: 28px;
-    top: 510px; // TODO
   }
 
   .panorama__title {
@@ -153,28 +150,30 @@
   // .panorama__author {}
 
   .panorama__description {
-    margin-bottom: 24px;
+    padding-bottom: 24px;
   }
 
   .panorama__button-like {
-    right: 23px;
-    top: 27px;
+    right: 28px;
+    top: 29px;
   }
 
   .panorama__stats {
-    position: absolute;
-    display: block;
     right: 59px;
     top: 24px;
   }
 }
 
-// @media @tablet-plus-desktop {}
+@media @tablet-plus-desktop {
+  .panorama__stats {
+    position: absolute;
+    display: block;
+  }
+}
 
 @media @desktop-only {
   .panorama {
     width: @desktop-width;
-    margin-bottom: 138px; // TODO
   }
 
   // .panorama__link {}
@@ -191,9 +190,8 @@
 
   .panorama__container {
     margin-left: 130px;
+    margin-right: 130px;
     padding-left: 28px;
-    padding-right: 49px;
-    top: 506px; // TODO
   }
 
   .panorama__title {
@@ -203,18 +201,16 @@
   // .panorama__author {}
 
   .panorama__description {
-    margin-bottom: 24px;
+    padding-bottom: 20px;
   }
 
   .panorama__button-like {
-    right: 25px;
+    right: 32px;
     top: 29px;
   }
 
   .panorama__stats {
-    position: absolute;
-    display: block;
-    right: 61px;
+    right: 62px;
     top: 25px;
   }
 }

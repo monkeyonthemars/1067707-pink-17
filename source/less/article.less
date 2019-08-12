@@ -1,4 +1,6 @@
-// .article {}
+.article {
+  position: relative;
+}
 
 .article__image {
   position: absolute;
@@ -6,6 +8,19 @@
 
 .article__image path {
   fill: #dedede;
+}
+
+.article__image-text {
+  position: absolute;
+  font-weight: 700;
+  color: #d22856;
+}
+
+.article__image-text::before {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 50%;
 }
 
 .article__title {
@@ -43,6 +58,21 @@
     margin-left: 20px;
   }
 
+  .article__image-text {
+    font-size: 96px;
+    line-height: 150px;
+    top: 134px;
+    left: 85px;
+  }
+
+  .article__image-text::before {
+    width: 175px;
+    height: 175px;
+    border: 14px solid #d22856;
+    top: -21px;
+    left: -46px;
+  }
+
   .article__title {
     line-height: 36px;
     margin-left: 330px;
@@ -78,6 +108,21 @@
   .article__image {
     margin-top: 66px;
     margin-left: 130px;
+  }
+
+  .article__image-text {
+    font-size: 120px;
+    line-height: 187px;
+    top: 161px;
+    left: 210px;
+  }
+
+  .article__image-text::before {
+    width: 220px;
+    height: 220px;
+    border: 17px solid #d22856;
+    top: -26px;
+    left: -58px;
   }
 
   .article__title {
