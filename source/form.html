@@ -61,19 +61,61 @@
 
         <div class="form__container">
 
-          <div class="form__name">
-            <p class="form__name-string">
-              <input class="form__name_input" type="text" name="lastname" id="name_1" value="Укажите фамилию *">
-              <label class="form__name-label" for="name_1">Фамилия:</label>
-            </p>
-            <p class="form__name-string">
-              <input class="form__name_input" type="text" name="firstname" id="name_2" value=" Введите ваше имя *">
-              <label class="form__name-label" for="name_2">Имя:</label>
-            </p>
-            <p class="form__name-string">
-              <input class="form__name_input" type="text" name="patronymic" id="name_3" value="Ну и отчество тоже">
-              <label class="form__name-label" for="name_3">Отчество:</label>
-            </p>
+          <div class="form__container-header">
+
+            <div class="form__name">
+              <ul class="form__name-list">
+                <li class="form__name-item">
+                  <input class="form__name_input" type="text" name="lastname" id="name_1" value="Укажите фамилию *">
+                  <label class="form__name-label" for="name_1">Фамилия:</label>
+                </li>
+                <li class="form__name-item">
+                  <input class="form__name_input" type="text" name="firstname" id="name_2" value=" Введите ваше имя *">
+                  <label class="form__name-label" for="name_2">Имя:</label>
+                </li>
+                <li class="form__name-item">
+                  <input class="form__name_input" type="text" name="patronymic" id="name_3" value="Ну и отчество тоже">
+                  <label class="form__name-label" for="name_3">Отчество:</label>
+                </li>
+              </ul>
+            </div>
+
+            <div class="form__app">
+              <fieldset class="form__app-fieldset">
+                <legend class="form__app-title">С каким приложением путешествовали?</legend>
+                <ul class="form__app-list">
+                  <li class="form__app-item">
+                    <input class="visually-hidden" type="radio" name="app" id="app_1" value="adaptive" checked>
+                    <label class="form__app-label" for="app_1">Pink для iOS</label>
+                  </li>
+                  <li class="form__app-item">
+                    <input class="visually-hidden" type="radio" name="app" id="app_2" value="adaptive" checked>
+                    <label class="form__app-label" for="app_2">Pink на Android</label>
+                  </li>
+                  <li class="form__app-item">
+                    <input class="visually-hidden" type="radio" name="app" id="app_3" value="adaptive" checked>
+                    <label class="form__app-label" for="app_3">Windows Phone</label>
+                  </li>
+                </ul>
+              </fieldset>
+            </div>
+
+          </div>
+
+          <div class="form__contacts">
+            <fieldset class="form__contacts-fieldset">
+              <legend class="form__contacts-title">Контактная информация</legend>
+              <div class="form__contacts-container">
+                <p class="form__contacts-string">
+                  <input class="form__contacts_input" type="text" name="phone" id="contact_1" value="Номер, пожалуйста">
+                  <label class="form__contacts-label" for="contact_1">Номер телефона</label>
+                </p>
+                <p class="form__contacts-string">
+                  <input class="form__contacts_input" type="text" name="email" id="contact_2" value="Введите почту *">
+                  <label class="form__contacts-label" for="contact_2">Адрес почты:</label>
+                </p>
+              </div>
+            </fieldset>
           </div>
 
           <div class="form__achievement">
@@ -108,40 +150,6 @@
             </fieldset>
           </div>
 
-          <div class="form__contacts">
-            <fieldset class="form__contacts-fieldset">
-              <legend class="form__contacts-title">Контактная информация</legend>
-              <p class="form__contacts-string">
-                <input class="form__contacts_input" type="text" name="phone" id="contact_1" value="Номер, пожалуйста">
-                <label class="form__contacts-label" for="contact_1">Номер телефона</label>
-              </p>
-              <p class="form__contacts-string">
-                <input class="form__contacts_input" type="text" name="email" id="contact_2" value="Введите почту *">
-                <label class="form__contacts-label" for="contact_2">Адрес почты:</label>
-              </p>
-            </fieldset>
-          </div>
-
-          <div class="form__app">
-            <fieldset class="form__app-fieldset">
-              <legend class="form__app-title">С каким приложением путешествовали?</legend>
-              <ul class="form__app-list">
-                <li class="form__app-item">
-                  <input class="visually-hidden" type="radio" name="app" id="app_1" value="adaptive" checked>
-                  <label class="form__app-label" for="app_1">Pink для iOS</label>
-                </li>
-                <li class="form__app-item">
-                  <input class="visually-hidden" type="radio" name="app" id="app_2" value="adaptive" checked>
-                  <label class="form__app-label" for="app_2">Pink на Android</label>
-                </li>
-                <li class="form__app-item">
-                  <input class="visually-hidden" type="radio" name="app" id="app_3" value="adaptive" checked>
-                  <label class="form__app-label" for="app_3">Windows Phone</label>
-                </li>
-              </ul>
-            </fieldset>
-          </div>
-
           <div class="form__review">
             <fieldset class="form__review-fieldset">
               <legend class="form__review-title">Опишите свои эмоции</legend>
@@ -154,7 +162,7 @@
 
         <div class="form__button-container">
           <button class="form__button">Отправить форму</button>
-          <p class="form__text"><span class="form__text-highlight">*</span> — обязательные поля</p>
+          <p class="form__text"><span class="form__text-highlight">*</span> — обязательные <span>для заполнения </span>поля</p>
         </div>
       </section>
 
