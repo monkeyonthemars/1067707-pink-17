@@ -77,11 +77,14 @@
 @media @mobile-only {
   .download-app {
     background-image: url("../img/bg-back-mobile@1x.webp");
+    background-size: 320px 462px;
+    width: @mobile-width;
     margin-top: -66px; // TODO
   }
 
   .download-app::before {
     background-image: url("../img/iphone-hand-mobile@1x.webp");
+    background-size: 258px 286px;
     top: 176px;
     bottom: 0;
     width: 258px;
@@ -122,7 +125,7 @@
     padding-bottom: 15px;
   }
 
-  @media @retina {
+  @media @mobile-retina {
     .download-app {
       background-image: url("../img/bg-back-mobile@2x.webp");
     }
@@ -142,11 +145,15 @@
 @media @tablet-only {
   .download-app {
     background-image: url("../img/bg-back-tablet@1x.webp");
+    // background-size: 666px 404px;
+    background-size: cover;
     padding-bottom: 90px;
+    width: @tablet-width;
   }
 
   .download-app::before {
     background-image: url("../img/iphone-hand-tablet@1x.webp");
+    background-size: 700px 545px;
     top: 182px;
     left: -20px;
     width: 700px;
@@ -180,7 +187,7 @@
 
   // .download-app__item-link {}
 
-  @media @retina {
+  @media @tablet-retina {
     .download-app {
       background-image: url("../img/bg-back-tablet@2x.webp");
     }
@@ -208,11 +215,14 @@
 @media @desktop-only {
   .download-app {
     background-image: url("../img/bg-back-desktop@1x.webp");
+    background-size: 2560px 853px;
     padding-bottom: 101px;
+    width: @desktop-width;
   }
 
   .download-app::before {
     background-image: url("../img/iphone-hand-desktop@1x.webp");
+    background-size: 1050px 645px;
     top: 208px;
     left: 146px;
     width: 1050px;
@@ -247,7 +257,7 @@
   // .download-app__item-link {}
   // .download-app__text {}
 
-  @media @retina {
+  @media @desktop-retina {
     .download-app {
       background-image: url("../img/bg-back-desktop@2x.webp");
     }

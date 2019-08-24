@@ -21,12 +21,15 @@
 
 // .contacts__image-triangle {}
 
-// .contacts__map {}
+.contacts__map {
+  display: block;
+}
 
 @media @mobile-only {
   .contacts {
     width: @mobile-width;
     text-align: center;
+    position: relative;
   }
 
   .contacts__header {
@@ -38,7 +41,9 @@
     margin-bottom: 31px;
   }
 
-  // .contacts__main-container {}
+  .contacts__main-container {
+    padding-bottom: 20px;
+  }
 
   // .contacts__container {}
 
@@ -49,6 +54,8 @@
   }
 
   .contacts__text {
+    position: relative;
+    z-index: 3;
     font-size: 24px;
     font-weight: 300;
     line-height: 28px;
@@ -60,15 +67,22 @@
 
   .contacts__image-triangle {
     position: absolute;
-    z-index: 2;
-    margin-left: -135px;
-    margin-top: -8px;
+    z-index: 3;
+    left: 0;
+    // bottom: 0;
+    // margin-left: -280px;
+    // margin-top: -40px;
+    bottom: 167px;
+    width: @mobile-width;
+    // background-color: red;
   }
 
   .contacts__map {
     position: relative;
     z-index: 1;
-    display: inline-block;
+    object-fit: cover;
+    width: @mobile-width;
+    height: 200px;
   }
 }
 
@@ -78,6 +92,7 @@
   .contacts {
     width: @tablet-width;
     text-align: center;
+    position: relative;
   }
 
   .contacts__header {
@@ -95,13 +110,13 @@
     display: flex;
     flex-wrap: wrap;
     margin-left: 66px;
-    margin-bottom: 35px;
+    margin-bottom: 28px;
   }
 
   .contacts__container {
     &--phone {
       margin-right: 99px;
-      margin-bottom: 44px;
+      // margin-bottom: 44px; // TODO
     }
 
     // &--email {
@@ -128,6 +143,7 @@
     }
 
     &--adress {
+      margin-top: 42px;
       margin-bottom: 5px;
     }
   }
@@ -142,14 +158,19 @@
   .contacts__image-triangle {
     position: absolute;
     z-index: 2;
-    margin-left: -135px;
+    left: 0;
+    bottom: 305px;
+    background-color: transparent; // TODO
+    width: 100%; // 660px
   }
 
   .contacts__map {
-    position: relative;
-    z-index: 1;
-    display: inline-block;
-    height: 367px;
+    //   position: relative;
+    //   z-index: 1;
+    //   display: inline-block;
+    object-fit: cover;
+    width: 100%; // 660px
+    height: 374px;
   }
 }
 
@@ -159,6 +180,7 @@
   .contacts {
     width: @desktop-width;
     text-align: center;
+    position: relative;
   }
 
   .contacts__header {
@@ -175,7 +197,7 @@
   .contacts__main-container {
     display: flex;
     margin-left: 177px;
-    margin-bottom: 68px;
+    margin-bottom: 23px;
   }
 
   .contacts__container {
@@ -222,14 +244,17 @@
 
   .contacts__image-triangle {
     position: absolute;
+    width: @desktop-width;
     z-index: 2;
-    margin-left: -135px;
+    left: 0;
+    bottom: 375px;
   }
 
   .contacts__map {
     position: relative;
     z-index: 1;
-    display: inline-block;
-    height: 456px;
+    object-fit: cover;
+    height: 500px;
+    width: 100%;
   }
 }
