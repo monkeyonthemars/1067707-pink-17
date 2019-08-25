@@ -61,7 +61,7 @@
 
         <div class="form__container">
 
-          <div class="form__container-header">
+          <!-- <div class="form__container-header"> -->
 
             <div class="form__name">
               <ul class="form__name-list">
@@ -86,7 +86,7 @@
                 <ul class="form__app-list">
                   <li class="form__app-item">
                     <input class="visually-hidden" type="radio" name="app" id="app_1" value="adaptive" checked>
-                    <label class="form__app-label" for="app_1">Pink для iOS</label>
+                    <label class="form__app-label form__app-label--checked" for="app_1">Pink для iOS</label>
                   </li>
                   <li class="form__app-item">
                     <input class="visually-hidden" type="radio" name="app" id="app_2" value="adaptive" checked>
@@ -100,7 +100,7 @@
               </fieldset>
             </div>
 
-          </div>
+          <!-- </div> -->
 
           <div class="form__contacts">
             <fieldset class="form__contacts-fieldset">
@@ -108,11 +108,11 @@
               <div class="form__contacts-container">
                 <p class="form__contacts-string">
                   <input class="form__contacts_input" type="text" name="phone" id="contact_1" value="Номер, пожалуйста">
-                  <label class="form__contacts-label" for="contact_1">Номер телефона</label>
+                  <label class="form__contacts-label form__contacts-label--phone" for="contact_1">Номер телефона</label>
                 </p>
                 <p class="form__contacts-string">
                   <input class="form__contacts_input" type="text" name="email" id="contact_2" value="Введите почту *">
-                  <label class="form__contacts-label" for="contact_2">Адрес почты:</label>
+                  <label class="form__contacts-label form__contacts-label--mail" for="contact_2">Адрес почты:</label>
                 </p>
               </div>
             </fieldset>
@@ -124,11 +124,14 @@
               <ul class="form__achievement-list">
                 <li class="form__achievement-item">
                   <input class="visually-hidden" type="radio" name="achievement" id="achievement_1" value="adaptive" checked>
-                  <label class="form__achievement-label" for="achievement_1">Сделал селфи с акулой</label>
+                  <label class="form__achievement-label form__achievement-label--checked" for="achievement_1">Сделал селфи с акулой</label>
                 </li>
+                <!-- <svg class="form__achievement-yes" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.698px" height="16.09px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
+                  <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
+                </svg> -->
                 <li class="form__achievement-item">
                   <input class="visually-hidden" type="radio" name="achievement" id="achievement_2" value="adaptive" checked>
-                  <label class="form__achievement-label" for="achievement_2">Обгорел на пляже</label>
+                  <label class="form__achievement-label form__achievement-label--checked" for="achievement_2">Обгорел на пляже</label>
                 </li>
                 <li class="form__achievement-item">
                   <input class="visually-hidden" type="radio" name="achievement" id="achievement_3" value="adaptive" checked>
@@ -140,7 +143,7 @@
                 </li>
                 <li class="form__achievement-item">
                   <input class="visually-hidden" type="radio" name="achievement" id="achievement_5" value="adaptive" checked>
-                  <label class="form__achievement-label" for="achievement_5">Удержал башню</label>
+                  <label class="form__achievement-label form__achievement-label--checked" for="achievement_5">Удержал башню</label>
                 </li>
                 <li class="form__achievement-item">
                   <input class="visually-hidden" type="radio" name="achievement" id="achievement_6" value="adaptive" checked>
@@ -153,7 +156,6 @@
           <div class="form__review">
             <fieldset class="form__review-fieldset">
               <legend class="form__review-title">Опишите свои эмоции</legend>
-              <!-- <label for="review">Опишите свои эмоции</label> -->
               <textarea class="form__review-text" id="review" name="review" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
             </fieldset>
           </div>
