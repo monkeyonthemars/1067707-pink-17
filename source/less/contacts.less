@@ -1,4 +1,6 @@
-// .contacts {}
+// .contacts {
+//   position: relative;
+// }
 
 .contacts__header {
   margin-top: 0; // reset-size
@@ -19,10 +21,37 @@
   margin-bottom: 0; // reset-size
 }
 
+.contacts__link {
+  color: #d22856;
+  text-decoration: none;
+}
+
+.contacts__link:hover,
+.contacts__link:focus {
+  color: #283645;
+  text-decoration: underline;
+}
+
+.contacts__link:active {
+  color: #bec2c7;
+  text-decoration: none;
+}
+
 // .contacts__image-triangle {}
 
 .contacts__map {
   display: block;
+  position: absolute;
+  order: 2;
+}
+
+.contacts__interactive-map {
+  order: 2;
+}
+
+.contacts__map-marker {
+  position: absolute;
+  order: 1;
 }
 
 @media @mobile-only {
@@ -72,17 +101,29 @@
     // bottom: 0;
     // margin-left: -280px;
     // margin-top: -40px;
-    bottom: 167px;
+    bottom: 153px;
     width: @mobile-width;
     // background-color: red;
+    fill: #ffffff;
   }
 
   .contacts__map {
-    position: relative;
-    z-index: 1;
+    // position: relative;
+    // z-index: 1;
     object-fit: cover;
     width: @mobile-width;
     height: 200px;
+  }
+
+  .contacts__interactive-map {
+    width: @mobile-width;
+    height: 200px;
+  }
+
+  .contacts__map-marker {
+    position: absolute;
+    bottom: 70px;
+    left: 142px;
   }
 }
 
@@ -159,9 +200,11 @@
     position: absolute;
     z-index: 2;
     left: 0;
-    bottom: 305px;
+    bottom: 306px;
     background-color: transparent; // TODO
     width: 100%; // 660px
+    height: 70px;
+    fill: #ffffff;
   }
 
   .contacts__map {
@@ -171,6 +214,17 @@
     object-fit: cover;
     width: 100%; // 660px
     height: 374px;
+  }
+
+  .contacts__interactive-map {
+    width: @tablet-width;
+    height: 374px;
+  }
+
+  .contacts__map-marker {
+    position: absolute;
+    bottom: 145px;
+    left: 312px;
   }
 }
 
@@ -248,13 +302,26 @@
     z-index: 2;
     left: 0;
     bottom: 375px;
+    height: 126px;
+    fill: #ffffff;
   }
 
   .contacts__map {
-    position: relative;
-    z-index: 1;
+    // position: relative;
+    // z-index: 1;
     object-fit: cover;
     height: 500px;
     width: 100%;
+  }
+
+  .contacts__interactive-map {
+    width: @desktop-width;
+    height: 500px;
+  }
+
+  .contacts__map-marker {
+    position: absolute;
+    bottom: 202px;
+    left: 582px;
   }
 }

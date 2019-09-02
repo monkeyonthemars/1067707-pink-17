@@ -27,10 +27,10 @@
   background-color: #283645;
   text-align: center;
 
-  &--hit {
-    background-image: url("../img/bg-hit.svg");
-    background-repeat: no-repeat;
-  }
+  // &--hit {
+  //   background-image: url("../img/bg-hit.svg");
+  //   background-repeat: no-repeat;
+  // }
 }
 
 .price__hit {
@@ -72,7 +72,11 @@
 //   --hidden {}
 // }
 
-// .price__boolean {}
+.price__boolean {
+  &--no {
+    fill: #f25b26;
+  }
+}
 
 // .price__control-menu {}
 
@@ -105,8 +109,8 @@
   }
 
   .price__header {
-    border-left: 1px solid red; // #e5e5e5;
-    border-right: 1px solid red; // #e5e5e5;
+    border-left: 1px solid #e5e5e5; // #e5e5e5;
+    border-right: 1px solid #e5e5e5; // #e5e5e5;
 
     &--hit {
       background-position: left top; // TODO
@@ -116,6 +120,17 @@
   .price__hit {
     top: 12px;
     left: 8px;
+  }
+
+  .price__hit-backgroung {
+    fill: #d22856;
+    position: absolute;
+    left: -2px;
+    top: 0;
+
+    &--tablet {
+      display: none;
+    }
   }
 
   .price__title {
@@ -133,9 +148,9 @@
     padding-top: 15px;
     padding-left: 22px;
     padding-bottom: 14px;
-    border-left: 1px solid blue; // #e5e5e5;
-    border-right: 1px solid blue; // #e5e5e5;
-    border-bottom: 2px solid blue; // #e5e5e5;
+    border-left: 1px solid #e5e5e5; // #e5e5e5;
+    border-right: 1px solid #e5e5e5; // #e5e5e5;
+    border-bottom: 2px solid #e5e5e5; // #e5e5e5;
     background-color: #ffffff;
   }
 
@@ -233,6 +248,17 @@
     left: 7px;
   }
 
+  .price__hit-backgroung {
+    fill: #d22856;
+    position: absolute;
+    left: 0;
+    top: -6px;
+
+    &--mobile {
+      display: none;
+    }
+  }
+
   .price__title {
     font-size: 16px;
     padding-top: 12px;
@@ -247,7 +273,7 @@
   .price__data {
     padding-top: 8px;
     padding-bottom: 8px;
-    border-bottom: 2px solid blue; // #e5e5e5;
+    border-bottom: 2px solid #e5e5e5; // #e5e5e5;
     background-color: #ffffff;
   }
 }
@@ -258,20 +284,20 @@
   }
 
   .price__info {
-    border-top: 2px solid red; // #e5e5e5;
-    border-left: 2px solid red; // #e5e5e5;
-    border-right: 2px solid red; // #e5e5e5;
+    border-top: 2px solid #e5e5e5; // #e5e5e5;
+    border-left: 2px solid #e5e5e5; // #e5e5e5;
+    border-right: 2px solid #e5e5e5; // #e5e5e5;
   }
 
   .price__info-text {
     font-weight: 400;
     line-height: 30px;
     background-color: #ffffff;
-    border-bottom: 2px solid red; // #e5e5e5;
+    border-bottom: 2px solid #e5e5e5; // #e5e5e5;
   }
 
   .price__column {
-    border-right: 2px solid blue; // #e5e5e5;
+    border-right: 2px solid #e5e5e5; // #e5e5e5;
   }
 
   .price__text {
@@ -332,6 +358,17 @@
     left: 11px;
   }
 
+  .price__hit-backgroung {
+    fill: #d22856;
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    &--tablet {
+      display: none;
+    }
+  }
+
   .price__title {
     font-size: 18px;
     padding-top: 16px;
@@ -344,7 +381,7 @@
   }
 
   .price__data {
-    border-bottom: 2px solid blue; // #e5e5e5;
+    border-bottom: 2px solid #e5e5e5; // #e5e5e5;
     background-color: #ffffff;
     padding-top: 15px;
     padding-bottom: 15px;
