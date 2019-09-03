@@ -1,109 +1,145 @@
 .article {
-  display: flex;
-  flex-direction: column;
+  position: relative;
 }
 
-.article__title { // *
-  color: #000000;
+.article__image {
+  position: absolute;
+  fill: #dedede;
+}
+
+.article__image-text {
+  position: absolute;
+  font-weight: 700;
+  color: #d22856;
+}
+
+.article__image-text::before {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.article__title {
+  margin-top: 0; // reset-size
+  margin-bottom: 0; // reset-size
+  font-size: 30px;
+  font-weight: 700;
 }
 
 .article__description {
-  color: #283645;
+  margin-top: 0; // reset-size
+  margin-bottom: 0; // reset-size
   font-weight: 400;
 }
 
 .article__link {
-  color: #d22856;
   font-weight: 400;
+  color: #d22856;
 }
 
-// Mobile
-@media (min-width: @mobile-width) and (max-width: @tablet-width - 1) {
+@media @mobile-only {
   .article {
-    display: none; // Сделать невидимость
+    display: none;
   }
 }
 
-// Mobile + Tablet
-@media (min-width: @mobile-width) and (max-width: @desktop-width - 1) {
-  .article__title {
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 24px;
-  }
-
-  .article__description {
-    font-size: 14px;
-    line-height: 24px;
-  }
-}
-
-// Tablet
-@media (min-width: @tablet-width) and (max-width: @desktop-width - 1) {
+@media @tablet-only {
   .article {
-    width: 530px;
-    padding-top: 100px;
-    background-image: url("../img/icon-timer.svg");
-    background-repeat: no-repeat; // Временно
-    background-position: 20px 60px; // center ??
-    height: 335px;
-    background-color: #ffffff;
+    width: @tablet-width;
+  }
+
+  .article__image {
+    width: 240px;
+    margin-top: 23px;
+    margin-left: 20px;
+  }
+
+  .article__image-text {
+    font-size: 96px;
+    line-height: 150px;
+    top: 134px;
+    left: 85px;
+  }
+
+  .article__image-text::before {
+    width: 175px;
+    height: 175px;
+    border: 14px solid #d22856;
+    top: -21px;
+    left: -46px;
   }
 
   .article__title {
-    font-size: 30px;
-    font-weight: 700;
     line-height: 36px;
+    margin-left: 330px;
+    padding-top: 95px;
+    padding-right: 150px; // TODO
     margin-bottom: 10px;
   }
 
   .article__description {
     font-size: 14px;
     line-height: 24px;
-    width: 300px;
+    margin-left: 330px;
+    padding-right: 30px; // TODO
     margin-bottom: 10px;
   }
 
   .article__link {
     font-size: 14px;
     line-height: 24px;
+    margin-left: 330px;
   }
 }
 
-// Tablet +
-@media (min-width: @tablet-width) {
-  .article {
-    padding-left: 400px;
-    text-align: left;
-  }
-}
+// @media @tablet-plus-desktop {}
 
-// Desktop
-@media (min-width: @desktop-width) {
+@media @desktop-only {
   .article {
+    width: @desktop-width;
+    padding-bottom: 113px;
     background-color: #f2f2f2;
-    height: 485px;
-    background-image: url("../img/icon-timer.svg");
-    background-repeat: no-repeat; // Временно
-    background-position: 20px 70px; // center ??
+  }
+
+  .article__image {
+    margin-top: 66px;
+    margin-left: 130px;
+  }
+
+  .article__image-text {
+    font-size: 120px;
+    line-height: 187px;
+    top: 161px;
+    left: 210px;
+  }
+
+  .article__image-text::before {
+    width: 220px;
+    height: 220px;
+    border: 17px solid #d22856;
+    top: -26px;
+    left: -58px;
   }
 
   .article__title {
-    font-size: 30px;
-    font-weight: 700;
     line-height: 30px;
-    margin-top: 160px;
-    margin-bottom: 20px;
+    padding-top: 160px;
+    margin-left: 496px;
+    margin-bottom: 24px;
   }
 
   .article__description {
     font-size: 18px;
     line-height: 30px;
-    margin-bottom: 30px;
+    margin-left: 496px;
+    padding-right: 150px;
+    margin-bottom: 31px;
   }
 
   .article__link {
     font-size: 18px;
     line-height: 30px;
+    margin-left: 496px;
   }
 }
