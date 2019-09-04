@@ -1,6 +1,5 @@
 .download-app {
   background-repeat: no-repeat;
-  // background-position: left 0;
   background-position: center 0;
   z-index: 1;
   position: relative;
@@ -18,14 +17,13 @@
   z-index: 0;
 }
 
-.download-app__title { // *
+.download-app__title {
   font-weight: 300;
-  z-index: 2; // ??
-  // line-height: 18px; //Auto
+  z-index: 2;
 }
 
 .download-app__container {
-  z-index: 2; // ??
+  z-index: 2;
 }
 
 .download-app__button {
@@ -58,7 +56,6 @@
 }
 
 .download-app__item {
-  // &--ios {}
   &--android {
     margin-top: 4px;
   }
@@ -68,9 +65,7 @@
   }
 }
 
-// .download-app__item-link {}
-
-.download-app__text { // *
+.download-app__text {
   font-weight: 300;
   line-height: 24px;
 }
@@ -80,7 +75,7 @@
     background-image: url("../img/bg-back-mobile@1x.webp");
     background-size: 320px 462px;
     width: @mobile-width;
-    margin-top: -66px; // TODO
+    margin-top: -66px;
   }
 
   .download-app::before {
@@ -117,8 +112,6 @@
     width: 206px;
   }
 
-  // .download-app__item-link {}
-
   .download-app__text {
     font-size: 14px;
     width: 240px;
@@ -146,7 +139,6 @@
 @media @tablet-only {
   .download-app {
     background-image: url("../img/bg-back-tablet@1x.webp");
-    // background-size: 666px 404px;
     background-size: cover;
     padding-bottom: 90px;
     width: @tablet-width;
@@ -176,7 +168,7 @@
   }
 
   .download-app__button {
-    margin-left: 0; // ??
+    margin-left: 0;
     margin-bottom: 33px;
   }
 
@@ -185,8 +177,6 @@
     margin-left: 4px;
     margin-bottom: 30px;
   }
-
-  // .download-app__item-link {}
 
   @media @tablet-retina {
     .download-app {
@@ -254,9 +244,6 @@
     margin-left: 6px;
     margin-bottom: 50px;
   }
-
-  // .download-app__item-link {}
-  // .download-app__text {}
 
   @media @desktop-retina {
     .download-app {

@@ -1,9 +1,3 @@
-// .site-nav {
-//   &--closed {}
-// };
-
-// .site-nav__toggle {};
-
 .site-nav__menu-burger,
 .site-nav__menu-cross {
   fill: #ffffff;
@@ -25,21 +19,15 @@
   position: relative;
   text-align: center;
   list-style: none;
-  margin-top: 0; // reset-size ++
+  margin-top: 0;
   margin-bottom: 0;
-  padding-left: 0; // reset-size --
+  padding-left: 0;
 }
-
-// .site-nav__item {
-
-// }
 
 .site-nav__link {
   color: #ffffff;
   text-decoration: none;
   font-size: 18px;
-
-  // &--active {}
 
   &:hover:not(.site-nav__link--active),
   &:focus:not(.site-nav__link--active) {
@@ -53,21 +41,9 @@
 }
 
 @media @mobile-only {
-  // .site-nav {
-  //   &--closed {}
-  // };
-
   .site-nav__toggle {
     top: 21px;
   }
-
-  // .site-nav__list {}
-
-  // .site-nav__item {}
-
-  // .site-nav__link {
-  //  &--active {}
-  // };
 }
 
 @media @mobile-plus-tablet {
@@ -86,9 +62,7 @@
     cursor: pointer;
     border: none;
     background-color: transparent;
-    padding: 0; // reset-size
-    // text-indent: -100px;
-    // overflow: hidden;
+    padding: 0;
     font-size: 0;
   }
 
@@ -96,8 +70,6 @@
     width: 49.945px;
     height: 24.007px;
   }
-
-  // .site-nav__list {}
 
   .site-nav__item {
     &:last-child {
@@ -114,56 +86,18 @@
     padding-top: 16px;
     padding-bottom: 15px;
     text-transform: uppercase;
-    border-top: 1px solid #000000; // В макете текстура, а не цвет
+    border-top: 1px solid #000000;
     box-shadow: inset 0 1px 0 #485461;
-
-    //  &--active {}
   }
 }
 
 @media @tablet-only {
-  // .site-nav {
-  //   &--closed {}
-  // };
-
   .site-nav__toggle {
     top: 44px;
   }
-
-  // .site-nav__list {};
-
-  // .site-nav__item {};
-
-  // .site-nav__link {};
-
-  // .site-nav__link {
-  //  &--active {}
-  // };
-}
-
-@media @tablet-plus-desktop {
-  // .site-nav {
-  //   &--closed {}
-  // };
-
-  // .site-nav__toggle {};
-
-  // .site-nav__list {};
-
-  // .site-nav__item {};
-
-  // .site-nav__link {};
-
-  // .site-nav__link {
-  //  &--active {}
-  // };
 }
 
 @media @desktop-only {
-  // .site-nav {
-  //   &--closed {}
-  // };
-
   .site-nav__toggle {
     display: none;
   }
@@ -174,10 +108,8 @@
     margin-top: 44px;
     margin-left: 173px;
     padding-right: 130px;
-    width: 620px; // При 100% выпирает
+    width: 620px;
   }
-
-  // .site-nav__item {}
 
   .site-nav__link {
     font-weight: 400;

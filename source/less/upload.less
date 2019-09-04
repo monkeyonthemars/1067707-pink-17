@@ -1,42 +1,14 @@
-// .upload {}
-
-// .upload__title {}
-
 .upload__text {
-  margin-top: 0; // reset-size
-  margin-bottom: 0; // reset-size
+  margin-top: 0;
+  margin-bottom: 0;
 }
-
-// .upload__container {}
-
-// .upload__image {}
-
-// .upload__editor {}
 
 .upload__editor-list {
-  margin-top: 0; // reset-size
-  margin-bottom: 0; // reset-size
-  padding-left: 0; // reset-size
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
   list-style: none;
 }
-
-// .upload__editor-item {}
-
-// .upload__icon-mobile {}
-
-// .upload__icon-tablet {}
-
-// .upload__scale {}
-
-// .upload__point {}
-
-// .upload__mobile-scale {}
-
-// .upload__mobile-point {}
-
-// .upload__button-container {}
-
-// .upload__button {}
 
 @media @mobile-only {
   .upload {
@@ -48,10 +20,6 @@
     padding-top: 23px;
   }
 
-  // .upload__title {}
-
-  // .upload__text {}
-
   .upload__container {
     background-color: #f2f2f2;
     margin-top: 42px;
@@ -61,6 +29,7 @@
     padding-top: 20px;
     display: block;
     padding-left: 18px;
+    padding-bottom: 10px;
   }
 
   .upload__editor {
@@ -71,8 +40,8 @@
     display: flex;
     margin-top: 29px;
     padding-left: 54px;
-    padding-bottom: 61px;
-    border-bottom: 1px solid #dddfe0; // #e5e5e5;
+    padding-bottom: 71px;
+    border-bottom: 1px solid #dddfe0;
   }
 
   .upload__editor-item {
@@ -142,6 +111,7 @@
     margin-top: 37px;
     margin-left: 18px;
     margin-right: 22px;
+    padding-bottom: 30px;
   }
 
   .upload__button {
@@ -189,8 +159,6 @@
   }
 }
 
-// @media @mobile-plus-tablet {}
-
 @media @tablet-only {
   .upload {
     width: @tablet-width;
@@ -203,8 +171,6 @@
     font-weight: 400;
     line-height: 30px;
   }
-
-  // .upload__text {}
 
   .upload__container {
     display: flex;
@@ -237,7 +203,7 @@
 
   .upload__editor-item {
     position: relative;
-    border-bottom: 1px solid #dddfe0; // #e5e5e5;
+    border-bottom: 1px solid #dddfe0;
 
     &--crop {
       padding-bottom: 23px;
@@ -383,8 +349,6 @@
   }
 }
 
-// @media @tablet-plus-desktop {}
-
 @media @desktop-only {
   .upload {
     width: @desktop-width;
@@ -398,8 +362,6 @@
     font-weight: 400;
     line-height: 30px;
   }
-
-  // .upload__text {}
 
   .upload__container {
     display: flex;
@@ -453,7 +415,6 @@
   .upload__icon-mobile {
     display: flex;
     fill: #b5b9be;
-    // width:20px;
 
     &--active {
       fill: #d22856;
