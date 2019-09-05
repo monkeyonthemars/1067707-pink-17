@@ -8,7 +8,9 @@ var mapMarker = document.querySelector('.contacts__map-marker');
 navMain.classList.add('site-nav--closed');
 header.classList.add('site-header--closed');
 navMenuCross.classList.add('visually-hidden');
-mapMarker.classList.add('visually-hidden');
+if (mapMarker) {
+  mapMarker.classList.add('visually-hidden');
+}
 
 navToggle.addEventListener('click', function() {
   navMain.classList.toggle('site-nav--closed');
