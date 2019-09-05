@@ -13,7 +13,6 @@ if (mapMarker) {
 }
 
 navToggle.addEventListener('click', function() {
-  console.log("hi")
   navMain.classList.toggle('site-nav--closed');
   header.classList.toggle('site-header--closed');
   navMenuBurger.classList.toggle('visually-hidden');
