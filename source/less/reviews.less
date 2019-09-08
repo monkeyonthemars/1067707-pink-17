@@ -3,6 +3,7 @@
 }
 
 .reviews__name {
+  color: #000000;
   margin-top: 0;
   margin-bottom: 0;
   font-weight: 700;
@@ -79,7 +80,7 @@
     font-size: 0;
 
     &--active {
-      border: 3px solid #283645;
+      border: 3px solid @dark-blue;
       background-color: #ffffff;
       margin-right: 16px;
     }
@@ -160,10 +161,10 @@
   }
 
   .reviews__text {
-    width: @desktop-width - 480px;
+    width: @desktop-width - 240px;
     order: 1;
-    margin-left: 240px;
-    margin-right: 240px;
+    margin-left: 120px;
+    margin-right: 120px;
     margin-bottom: 36px;
   }
 
@@ -178,15 +179,15 @@
   .reviews__image-left {
     position: absolute;
     cursor: pointer;
-    left: 130px;
+    left: 10px;
     top: 212px;
-    fill: #efefef;
+    fill: #bec2c7;
   }
 
   .reviews__image-right {
     position: absolute;
     cursor: pointer;
-    right: 72px;
+    right: 11px;
     top: 212px;
     fill: #bec2c7;
   }
