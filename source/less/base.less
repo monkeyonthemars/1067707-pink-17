@@ -4,7 +4,7 @@ body {
   color: @dark-blue;
   font-size: 14px;
   line-height: 24px;
-  margin: 0;
+  margin: 0 auto;
 }
 
 .visually-hidden {
@@ -13,4 +13,22 @@ body {
   width: 1px;
   height: 1px;
   margin: -1px;
+}
+
+@media @mobile-only {
+  body {
+    width: @mobile-width;
+  }
+}
+
+@media @tablet-only {
+  body {
+    width: @tablet-width;
+  }
+}
+
+@media @desktop-only {
+  body {
+    width: @desktop-width;
+  }
 }
