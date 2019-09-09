@@ -16,18 +16,18 @@
   fill: #ffffff;
 }
 
-.site-header__logo-mobile:hover,
-.site-header__logo-mobile:focus,
-.site-header__logo-tablet:hover,
-.site-header__logo-tablet:focus,
-.site-header__logo-desktop:hover,
-.site-header__logo-desktop:focus {
+.site-header__logo-mobile:hover path,
+.site-header__logo-mobile:focus path,
+.site-header__logo-tablet:hover path,
+.site-header__logo-tablet:focus path,
+.site-header__logo-desktop:hover path,
+.site-header__logo-desktop:focus path {
   fill: @color-pink;
 }
 
-.site-header__logo-mobile:active,
-.site-header__logo-tablet:active,
-.site-header__logo-desktop:active {
+.site-header__logo-mobile:active path,
+.site-header__logo-tablet:active path,
+.site-header__logo-desktop:active path {
   fill: #ffffff;
   opacity: 0.3;
 }
@@ -57,7 +57,7 @@
 
 @media @mobile-plus-tablet {
   .site-header {
-    background-color: #283645;
+    background-color: @dark-blue;
 
     &--closed {
       background-color: @background-gray;
@@ -101,7 +101,7 @@
   }
 
   .site-header__logo {
-    padding-left: 130px;
+    padding-left: 10px;
   }
 
   .site-header__logo-mobile {

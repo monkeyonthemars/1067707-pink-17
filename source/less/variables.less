@@ -1,18 +1,18 @@
-@background-blue: #283645;
-@background-gray: rgba(40, 54, 69, 0.7);
+@dark-blue: #283645;
+@background-gray: rgba(0, 0, 0, 0.3);
 @color-pink: #d22856;
 @color-pink-opacity: rgba(210, 40, 86, 0.3);
 @mobile-width: 320px;
 @tablet-width: 660px;
-@desktop-width: 1200px;
-@retina-dpi: 144dpi;
-@retina-dppx: 1.5dppx;
+@desktop-width: 960px;
 @mobile-only: ~"(max-width: 659px)";
-@mobile-plus-tablet: ~"(min-width: 320px) and (max-width: 1199px)";
-@tablet-only: ~"(min-width: 660px) and (max-width: 1199px)";
+@mobile-plus-tablet: ~"(min-width: 320px) and (max-width: 959px)";
+@tablet-only: ~"(min-width: 660px) and (max-width: 959px)";
 @tablet-plus-desktop: ~"(min-width: 660px)";
-@desktop-only: ~"(min-width: 1200px)";
-@retina: ~"(min-resolution: 144dpi), (min-resolution: 1.5dppx)";
-@mobile-retina: ~"(max-width: 659px) and (min-resolution: 144dpi), (max-width: 659px) and (min-resolution: 1.5dppx)";
-@tablet-retina: ~"(min-width: 660px) and (max-width: 1199px) and (min-resolution: 144dpi), (min-width: 660px) and (max-width: 1199px) and (min-resolution: 1.5dppx)";
-@desktop-retina: ~"(min-width: 1200px) and (min-resolution: 144dpi), (min-width: 1200px) and (min-resolution: 1.5dppx)";
+@desktop-only: ~"(min-width: 960px)";
+
+.retina(@rules) {
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+        @rules();
+    }
+}

@@ -18,7 +18,7 @@
 
 .price__header {
   position: relative;
-  background-color: #283645;
+  background-color: @dark-blue;
   text-align: center;
 }
 
@@ -135,7 +135,7 @@
     font-size: 14px;
     font-weight: 400;
     line-height: 30px;
-    color: #283645;
+    color: @dark-blue;
     text-transform: uppercase;
   }
 
@@ -164,7 +164,7 @@
     font-size: 0;
 
     &--active {
-      border: 3px solid #283645;
+      border: 3px solid @dark-blue;
       background-color: #ffffff;
     }
 
@@ -222,7 +222,6 @@
     fill: #d22856;
     position: absolute;
     left: 0;
-    top: -6px;
 
     &--mobile {
       display: none;
@@ -233,6 +232,12 @@
     font-size: 16px;
     padding-top: 12px;
     margin-bottom: -3px;
+  }
+
+  .price__boolean {
+    position: absolute;
+    left: calc(50% - 14px);
+    bottom: 9px;
   }
 
   .price__value {
@@ -276,11 +281,6 @@
     }
   }
 
-  .price__boolean {
-    position: absolute;
-    left: calc(50% - 14px);
-  }
-
   .price__control-menu {
     display: none;
   }
@@ -294,7 +294,7 @@
 
   .price__container {
     padding-top: 147px;
-    margin-left: 128px;
+    margin-left: 8px;
   }
 
   .price__info {
@@ -339,6 +339,12 @@
     font-size: 18px;
     padding-top: 16px;
     margin-bottom: 2px;
+  }
+
+  .price__boolean {
+    position: absolute;
+    left: calc(50% - 14px);
+    bottom: 14px;
   }
 
   .price__value {

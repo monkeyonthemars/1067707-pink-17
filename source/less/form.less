@@ -35,7 +35,7 @@
 .form__contacts_input:focus,
 .form__review-text:hover,
 .form__review-text:focus {
-  border: 2px solid #283645;
+  border: 2px solid @dark-blue;
 }
 
 .form__name_input:active,
@@ -48,7 +48,7 @@
 .form__app-input:focus + .form__app-label::before,
 .form__achievement-input:hover + .form__achievement-label::before,
 .form__achievement-input:focus + .form__achievement-label::before {
-  border: 2px solid #283645;
+  border: 2px solid @dark-blue;
 }
 
 .form__app-input:active + .form__app-label::before,
@@ -62,7 +62,7 @@
 }
 
 .form__button:active {
-  color: #00ba8e;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .form__button:disabled {
@@ -82,6 +82,10 @@
   margin-right: auto;
 }
 
+.form__contacts-icon {
+  z-index: 1;
+}
+
 @media @mobile-only {
   .form {
     width: @mobile-width;
@@ -94,7 +98,7 @@
     font-size: 14px;
     font-weight: 400;
     line-height: 30px;
-    color: #283645;
+    color: @dark-blue;
     text-align: center;
     margin-left: 20px;
     padding-right: 20px;
@@ -127,7 +131,7 @@
     font-size: 18px;
     font-weight: 400;
     line-height: 30px;
-    color: #283645;
+    color: @dark-blue;
     border: 2px solid #e5e5e5;
     padding-top: 15px;
     padding-left: 20px;
@@ -184,7 +188,7 @@
     font-size: 18px;
     font-weight: 400;
     line-height: 30px;
-    color: #283645;
+    color: @dark-blue;
     padding-left: 89px;
   }
 
@@ -240,7 +244,7 @@
     font-size: 18px;
     font-weight: 400;
     line-height: 30px;
-    color: #283645;
+    color: @dark-blue;
     border: 2px solid #e5e5e5;
     padding-top: 15px;
     padding-left: 20px;
@@ -304,7 +308,7 @@
     font-size: 18px;
     font-weight: 400;
     line-height: 30px;
-    color: #283645;
+    color: @dark-blue;
     padding-left: 89px;
   }
 
@@ -355,7 +359,7 @@
     font-size: 18px;
     font-weight: 400;
     line-height: 30px;
-    color: #283645;
+    color: @dark-blue;
     border: 2px solid #e5e5e5;
     resize: none;
     padding-top: 14px;
@@ -385,7 +389,7 @@
     font-size: 14px;
     font-weight: 400;
     line-height: 30px;
-    color: #283645;
+    color: @dark-blue;
     text-transform: uppercase;
     text-align: center;
 
@@ -412,7 +416,7 @@
     font-size: 18px;
     font-weight: 400;
     line-height: 30px;
-    color: #283645;
+    color: @dark-blue;
     text-align: center;
     padding-left: 49px;
     padding-right: 49px;
@@ -442,7 +446,7 @@
     font-size: 18px;
     font-weight: 400;
     line-height: 30px;
-    color: #283645;
+    color: @dark-blue;
     border: 2px solid #e5e5e5;
     padding-top: 15px;
     padding-left: 21px;
@@ -499,7 +503,7 @@
     font-size: 18px;
     font-weight: 400;
     line-height: 30px;
-    color: #283645;
+    color: @dark-blue;
     padding-left: 77px;
   }
 
@@ -569,7 +573,7 @@
     font-size: 18px;
     font-weight: 400;
     line-height: 30px;
-    color: #283645;
+    color: @dark-blue;
     border: 2px solid #e5e5e5;
     padding-top: 15px;
     padding-left: 19px;
@@ -655,7 +659,7 @@
     font-size: 18px;
     font-weight: 400;
     line-height: 30px;
-    color: #283645;
+    color: @dark-blue;
     padding-left: 76px;
   }
 
@@ -713,7 +717,7 @@
     font-size: 18px;
     font-weight: 400;
     line-height: 30px;
-    color: #283645;
+    color: @dark-blue;
     border: 2px solid #e5e5e5;
     resize: none;
     padding-left: 18px;
@@ -751,7 +755,7 @@
     font-size: 14px;
     font-weight: 400;
     line-height: 30px;
-    color: #283645;
+    color: @dark-blue;
     text-transform: uppercase;
     text-align: center;
     padding-top: 4px;
@@ -771,6 +775,7 @@
   .form {
     width: @desktop-width;
     margin-top: 133px;
+    margin-bottom: 12px;
   }
 
   .form__title {
@@ -779,23 +784,23 @@
     font-size: 18px;
     font-weight: 400;
     line-height: 30px;
-    color: #283645;
+    color: @dark-blue;
     text-align: center;
-    padding-left: 200px;
-    padding-right: 200px;
+    padding-left: 80px;
+    padding-right: 80px;
   }
 
   .form__container {
     display: flex;
     margin-top: 70px;
-    margin-left: 110px;
-    margin-right: 110px;
+    margin-left: 0;
+    margin-right: 0;
     flex-wrap: wrap;
   }
 
   .form__name {
     order: 1;
-    margin-left: 20px;
+    margin-left: 10px;
     margin-right: 70px;
     margin-top: 14px;
     width: 435px;
@@ -816,7 +821,7 @@
     font-size: 18px;
     font-weight: 400;
     line-height: 30px;
-    color: #283645;
+    color: @dark-blue;
     border: 2px solid #e5e5e5;
     padding-top: 15px;
     padding-left: 21px;
@@ -872,7 +877,7 @@
     font-size: 18px;
     font-weight: 400;
     line-height: 30px;
-    color: #283645;
+    color: @dark-blue;
   }
 
   .form__app-label::before {
@@ -903,8 +908,8 @@
   .form__contacts {
     width: 100%;
     order: 3;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
     margin-bottom: 57px;
   }
 
@@ -945,7 +950,7 @@
     font-size: 18px;
     font-weight: 400;
     line-height: 30px;
-    color: #283645;
+    color: @dark-blue;
     border: 2px solid #e5e5e5;
     padding-top: 15px;
     padding-left: 19px;
@@ -993,8 +998,8 @@
   .form__achievement {
     width: 100%;
     order: 4;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
     margin-bottom: 57px;
   }
 
@@ -1036,7 +1041,7 @@
     font-size: 18px;
     font-weight: 400;
     line-height: 30px;
-    color: #283645;
+    color: @dark-blue;
     padding-left: 58px;
   }
 
@@ -1068,8 +1073,8 @@
   .form__review {
     width: 100%;
     order: 5;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
     margin-bottom: 65px;
   }
 
@@ -1094,7 +1099,7 @@
     font-size: 18px;
     font-weight: 400;
     line-height: 30px;
-    color: #283645;
+    color: @dark-blue;
     border: 2px solid #e5e5e5;
     resize: none;
     padding-left: 18px;
@@ -1110,8 +1115,8 @@
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 7px;
-    margin-left: 110px;
-    margin-right: 110px;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .form__button {
@@ -1126,7 +1131,7 @@
     color: #ffffff;
     text-transform: uppercase;
     border: 0;
-    margin-left: 20px;
+    margin-left: 10px;
     width: 300px;
   }
 
@@ -1134,11 +1139,11 @@
     font-size: 14px;
     font-weight: 400;
     line-height: 30px;
-    color: #283645;
+    color: @dark-blue;
     text-transform: uppercase;
     text-align: center;
     padding-top: 4px;
-    margin-right: 20px;
+    margin-right: 10px;
 
     &--hidden {
       margin-right: 0;

@@ -59,9 +59,16 @@
     }
   }
 
-  .upload__icon-mobile {
+  .upload__icon {
     display: flex;
     fill: #b5b9be;
+    width: 48px;
+    height: 48px;
+
+    &--contrast {
+      width: 32px;
+      height: 32px;
+    }
 
     &--active {
       fill: #d22856;
@@ -73,10 +80,6 @@
     }
   }
 
-  .upload__icon-tablet {
-    display: none;
-  }
-
   .upload__scale {
     display: none;
   }
@@ -84,7 +87,7 @@
   .upload__mobile-scale {
     position: absolute;
     display: block;
-    background-color: #283645;
+    background-color: @dark-blue;
     width: 240px;
     height: 2px;
     left: 38px;
@@ -222,16 +225,15 @@
     }
   }
 
-  .upload__icon-mobile {
-    display: none;
-  }
-
-  .upload__icon-tablet {
+  .upload__icon {
     display: flex;
-    fill: #b5b9be;
+    width: 24px;
+    height: 24px;
+    fill: #d22856;
 
-    &--active {
-      fill: #d22856;
+    &--contrast {
+      width: 16px;
+      height: 16px;
     }
 
     &:hover,
@@ -243,7 +245,7 @@
   .upload__scale {
     position: absolute;
     display: block;
-    background-color: #283645;
+    background-color: @dark-blue;
     height: 2px;
     width: 202px;
 
@@ -353,7 +355,7 @@
   .upload {
     width: @desktop-width;
     padding-top: 5px;
-    margin-bottom: 35px;
+    margin-bottom: 40px;
   }
 
   .upload__title {
@@ -366,8 +368,8 @@
   .upload__container {
     display: flex;
     background-color: #f2f2f2;
-    margin-left: 130px;
-    margin-right: 130px;
+    margin-left: 10px;
+    margin-right: 10px;
     margin-top: 66px;
     padding-bottom: 34px;
   }
@@ -412,12 +414,15 @@
     }
   }
 
-  .upload__icon-mobile {
+  .upload__icon {
     display: flex;
-    fill: #b5b9be;
+    width: 48px;
+    height: 48px;
+    fill: #d22856;
 
-    &--active {
-      fill: #d22856;
+    &--contrast {
+      width: 32px;
+      height: 32px;
     }
 
     &:hover,
@@ -426,14 +431,10 @@
     }
   }
 
-  .upload__icon-tablet {
-    display: none;
-  }
-
   .upload__scale {
     position: absolute;
     display: block;
-    background-color: #283645;
+    background-color: @dark-blue;
     height: 2px;
     width: 288px;
 
