@@ -3,13 +3,10 @@
   background-position: center 0;
   background-color: #253240;
   z-index: 1;
-}
-
-.download-app__block-container {
-  display: flex;
   position: relative;
   color: #ffffff;
   text-align: center;
+  display: flex;
   flex-direction: column;
 }
 
@@ -77,18 +74,13 @@
 @media @mobile-only {
   .download-app {
     background-image: url("../img/bg-back-mobile@1x.jpg");
-    background-size: 300px 300px;
+    background-size: cover;
     background-color: #1d2631;
-    width: 100%;
+    margin-top: -69px;
 
     .retina({
       background-image: url("../img/bg-back-mobile@2x.jpg");
     });
-  }
-
-  .download-app__block-container {
-    width: @mobile-width;
-    margin-top: -69px;
   }
 
   .download-app::before {
@@ -98,7 +90,7 @@
     bottom: 0;
     width: 258px;
     height: 286px;
-    left: calc(50% - 160px);
+    left: calc(50% - 153px);
 
     .retina({
       background-image: url("../img/iphone-hand-mobile@2x.png");
@@ -111,14 +103,17 @@
     padding-top: 67px;
     padding-left: 10px;
     width: 300px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .download-app__container {
     background-color: #1d2631;
     margin-top: 287px;
-    width: 320px;
     margin-left: auto;
     margin-right: auto;
+    width: 100%;
+    padding-left: 6px;
   }
 
   .download-app__button {
@@ -127,16 +122,19 @@
   }
 
   .download-app__list {
+    padding-left: 1px;
     margin-top: 34px;
-    margin-left: 16px;
     width: 206px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .download-app__text {
     font-size: 14px;
     width: 240px;
-    margin-left: 40px;
     padding-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -164,6 +162,7 @@
     left: calc(50% - 350px);
     width: 100%;
     height: 545px;
+    bottom: 10px;
 
     .retina({
       background-image: url("../img/iphone-hand-tablet@2x.png");
@@ -174,14 +173,14 @@
     font-size: 40px;
     line-height: 48px;
     margin-top: 200px;
-    margin-left: 50px;
+    margin-left: calc(50% - 330px + 50px);
     margin-bottom: 32px;
     width: 240px;
   }
 
   .download-app__container {
     width: 300px;
-    margin-left: 20px;
+    margin-left: calc(50% - 330px + 20px);
   }
 
   .download-app__button {
@@ -225,7 +224,7 @@
     background-image: url("../img/iphone-hand-desktop@1x.png");
     background-size: 1050px 645px;
     top: 208px;
-    left: calc(50% - 480px);
+    left: calc(50% - 480px + 25px);
     width: 930px;
     height: 645px;
     .retina({
@@ -237,13 +236,13 @@
     font-size: 50px;
     line-height: 60px;
     margin-top: 218px;
-    margin-left: 10px;
+    margin-left: calc(50% - 480px + 10px);
     width: 300px;
     margin-bottom: 52px;
   }
 
   .download-app__container {
-    margin-left: 10px;
+    margin-left: calc(50% - 480px + 10px);
     width: 300px;
   }
 

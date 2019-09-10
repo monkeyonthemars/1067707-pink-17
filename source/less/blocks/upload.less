@@ -12,7 +12,6 @@
 
 @media @mobile-only {
   .upload {
-    width: @mobile-width;
     text-align: center;
     font-size: 14px;
     font-weight: 400;
@@ -128,6 +127,7 @@
     font-weight: 700;
     line-height: 18px;
     background-color: #f2f2f2;
+    width: 280px;
 
     &--upload {
       color: #d22856;
@@ -164,7 +164,6 @@
 
 @media @tablet-only {
   .upload {
-    width: @tablet-width;
     padding-top: 45px;
   }
 
@@ -175,14 +174,17 @@
     line-height: 30px;
   }
 
-  .upload__container {
+  .upload__block-container {
     display: flex;
-    background-color: #f2f2f2;
     margin-top: 68px;
     padding-left: 20px;
     padding-top: 58px;
     padding-bottom: 31px;
     margin-bottom: 7px;
+  }
+
+  .upload__container {
+    background-color: #f2f2f2;
   }
 
   .upload__image {
@@ -353,7 +355,6 @@
 
 @media @desktop-only {
   .upload {
-    width: @desktop-width;
     padding-top: 5px;
     margin-bottom: 40px;
   }
@@ -365,13 +366,17 @@
     line-height: 30px;
   }
 
-  .upload__container {
+  .upload__block-container {
     display: flex;
-    background-color: #f2f2f2;
-    margin-left: 10px;
-    margin-right: 10px;
     margin-top: 66px;
     padding-bottom: 34px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+  }
+
+  .upload__container {
+    background-color: #f2f2f2;
   }
 
   .upload__image {

@@ -5,8 +5,8 @@
 }
 
 .site-header__block-container {
-  display: flex;
   position: relative;
+  z-index: 2;
 }
 
 .site-header__logo {
@@ -37,11 +37,6 @@
 }
 
 @media @mobile-only {
-  .site-header__block-container {
-    width: @mobile-width;
-    display: flex;
-  }
-
   .site-header__logo {
     padding-top: 22px;
     height: 69px;
@@ -75,11 +70,6 @@
 }
 
 @media @tablet-only {
-  .site-header__block-container {
-    width: @tablet-width;
-    display: flex;
-  }
-
   .site-header__logo-mobile {
     display: none;
   }
@@ -102,7 +92,6 @@
 
 @media @desktop-only {
   .site-header__block-container {
-    width: @desktop-width;
     display: flex;
   }
 

@@ -83,9 +83,10 @@
   .contacts__image-triangle {
     position: absolute;
     z-index: 3;
-    left: 0;
+    left: calc(50% - 160px);
     bottom: 153px;
     fill: #ffffff;
+    width: @mobile-width;
   }
 
   .contacts__interactive-map {
@@ -110,7 +111,6 @@
     text-align: center;
     position: relative;
     margin-bottom: 7px;
-    background-color: red;
   }
 
   .contacts__header {
@@ -265,10 +265,11 @@
   .contacts__image-triangle {
     position: absolute;
     z-index: 2;
-    left: 0;
+    left: calc(50% - 480px);
     bottom: 367px;
     height: 126px;
     fill: #ffffff;
+    width: @desktop-width;
   }
 
   .contacts__interactive-map {
