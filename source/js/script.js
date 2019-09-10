@@ -4,7 +4,6 @@ var header = document.querySelector('.site-header');
 var mapMarker = document.querySelector('.contacts__map-marker');
 var contacts = document.querySelector('.contacts');
 
-
 navToggle.classList.remove("visually-hidden");
 
 navMain.classList.add('site-nav--closed');
