@@ -76,7 +76,11 @@
     background-image: url("../img/bg-back-mobile@1x.jpg");
     background-size: 320px 462px;
     width: @mobile-width;
-    margin-top: -66px;
+    margin-top: -69px;
+
+    .retina({
+      background-image: url("../img/bg-back-mobile@2x.jpg");
+    })
   }
 
   .download-app::before {
@@ -86,25 +90,29 @@
     bottom: 0;
     width: 258px;
     height: 286px;
+
+    .retina({
+      background-image: url("../img/iphone-hand-mobile@2x.png");
+    })
   }
 
   .download-app__title {
     font-size: 24px;
     line-height: 30px;
-    padding-top: 64px;
+    padding-top: 67px;
     padding-left: 10px;
     width: 300px;
   }
 
   .download-app__container {
     background-color: #1d2631;
-    margin-top: 290px;
+    margin-top: 287px;
     width: 320px;
   }
 
   .download-app__button {
     width: 242px;
-    margin-top: 28px;
+    margin-top: 30px;
   }
 
   .download-app__list {
@@ -118,16 +126,6 @@
     width: 240px;
     margin-left: 40px;
     padding-bottom: 15px;
-  }
-
-  @media @retina {
-    .download-app {
-      background-image: url("../img/bg-back-mobile@2x.jpg");
-    }
-
-    .download-app::before {
-      background-image: url("../img/iphone-hand-mobile@2x.png");
-    }
   }
 }
 
@@ -143,6 +141,10 @@
     background-size: cover;
     padding-bottom: 90px;
     width: @tablet-width;
+
+    .retina({
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+    })
   }
 
   .download-app::before {
@@ -152,6 +154,10 @@
     left: -20px;
     width: 100%;
     height: 545px;
+
+    .retina({
+      background-image: url("../img/iphone-hand-tablet@2x.png");
+    })
   }
 
   .download-app__title {
@@ -178,16 +184,6 @@
     margin-left: 4px;
     margin-bottom: 30px;
   }
-
-  @media @retina {
-    .download-app {
-      background-image: url("../img/bg-back-tablet@2x.jpg");
-    }
-
-    .download-app::before {
-      background-image: url("../img/iphone-hand-tablet@2x.png");
-    }
-  }
 }
 
 @media @tablet-plus-desktop {
@@ -210,6 +206,10 @@
     background-size: 2560px 853px;
     padding-bottom: 101px;
     width: @desktop-width;
+
+    .retina({
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+    })
   }
 
   .download-app::before {
@@ -219,6 +219,10 @@
     left: 26px;
     width: 930px;
     height: 645px;
+  
+    .retina({
+      background-image: url("../img/iphone-hand-desktop@2x.png");
+    })
   }
 
   .download-app__title {
@@ -244,15 +248,5 @@
     width: 208px;
     margin-left: 6px;
     margin-bottom: 50px;
-  }
-
-  @media @retina {
-    .download-app {
-      background-image: url("../img/bg-back-desktop@2x.jpg");
-    }
-
-    .download-app::before {
-      background-image: url("../img/iphone-hand-desktop@2x.png");
-    }
   }
 }
