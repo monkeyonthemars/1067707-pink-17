@@ -2,6 +2,10 @@
   position: relative;
 }
 
+.article__block-container {
+  position: relative;
+}
+
 .article__image {
   position: absolute;
   fill: #dedede;
@@ -46,10 +50,6 @@
 }
 
 @media @tablet-only {
-  .article {
-    width: @tablet-width;
-  }
-
   .article__image {
     width: 240px;
     top: 23px;
@@ -96,7 +96,6 @@
 
 @media @desktop-only {
   .article {
-    width: @desktop-width;
     padding-bottom: 113px;
     background-color: #f2f2f2;
   }

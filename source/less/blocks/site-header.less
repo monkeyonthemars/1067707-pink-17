@@ -1,8 +1,12 @@
 .site-header {
-  display: inline-block;
-  position: relative;
   background-color: @background-gray;
+  position: relative;
   z-index: 2;
+}
+
+.site-header__block-container {
+  display: flex;
+  position: relative;
 }
 
 .site-header__logo {
@@ -33,8 +37,9 @@
 }
 
 @media @mobile-only {
-  .site-header {
+  .site-header__block-container {
     width: @mobile-width;
+    display: flex;
   }
 
   .site-header__logo {
@@ -70,8 +75,9 @@
 }
 
 @media @tablet-only {
-  .site-header {
+  .site-header__block-container {
     width: @tablet-width;
+    display: flex;
   }
 
   .site-header__logo-mobile {
@@ -95,7 +101,7 @@
 }
 
 @media @desktop-only {
-  .site-header {
+  .site-header__block-container {
     width: @desktop-width;
     display: flex;
   }

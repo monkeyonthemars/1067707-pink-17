@@ -2,6 +2,10 @@
   text-align: center;
 }
 
+.reviews__block-container {
+  position: relative;
+}
+
 .reviews__name {
   color: #000000;
   margin-top: 0;
@@ -30,7 +34,6 @@
 
 @media @mobile-only {
   .reviews {
-    width: @mobile-width;
     margin-top: 41px;
   }
 
@@ -103,10 +106,6 @@
 }
 
 @media @tablet-only {
-  .reviews {
-    width: @tablet-width;
-  }
-
   .reviews__name {
     order: 1;
     font-size: 20px;
@@ -135,7 +134,7 @@
 }
 
 @media @tablet-plus-desktop {
-  .reviews {
+  .reviews__block-container {
     display: flex;
     flex-direction: column;
   }
@@ -146,8 +145,7 @@
 }
 
 @media @desktop-only {
-  .reviews {
-    width: @desktop-width;
+  .reviews__block-container {
     position: relative;
     align-items: center;
   }

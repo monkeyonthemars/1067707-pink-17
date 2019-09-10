@@ -3,10 +3,13 @@
   background-position: center 0;
   background-color: #253240;
   z-index: 1;
+}
+
+.download-app__block-container {
+  display: flex;
   position: relative;
   color: #ffffff;
   text-align: center;
-  display: flex;
   flex-direction: column;
 }
 
@@ -74,13 +77,18 @@
 @media @mobile-only {
   .download-app {
     background-image: url("../img/bg-back-mobile@1x.jpg");
-    background-size: 320px 462px;
-    width: @mobile-width;
-    margin-top: -69px;
+    background-size: 300px 300px;
+    background-color: #1d2631;
+    width: 100%;
 
     .retina({
       background-image: url("../img/bg-back-mobile@2x.jpg");
     });
+  }
+
+  .download-app__block-container {
+    width: @mobile-width;
+    margin-top: -69px;
   }
 
   .download-app::before {
@@ -90,6 +98,7 @@
     bottom: 0;
     width: 258px;
     height: 286px;
+    left: calc(50% - 160px);
 
     .retina({
       background-image: url("../img/iphone-hand-mobile@2x.png");
@@ -108,6 +117,8 @@
     background-color: #1d2631;
     margin-top: 287px;
     width: 320px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .download-app__button {
@@ -140,7 +151,6 @@
     background-image: url("../img/bg-back-tablet@1x.jpg");
     background-size: cover;
     padding-bottom: 90px;
-    width: @tablet-width;
 
     .retina({
       background-image: url("../img/bg-back-tablet@2x.jpg");
@@ -151,7 +161,7 @@
     background-image: url("../img/iphone-hand-tablet@1x.png");
     background-size: 700px 545px;
     top: 182px;
-    left: -20px;
+    left: calc(50% - 350px);
     width: 100%;
     height: 545px;
 
@@ -203,9 +213,8 @@
 @media @desktop-only {
   .download-app {
     background-image: url("../img/bg-back-desktop@1x.jpg");
-    background-size: 2560px 853px;
+    background-size: cover;
     padding-bottom: 101px;
-    width: @desktop-width;
 
     .retina({
       background-image: url("../img/bg-back-desktop@2x.jpg");
@@ -216,7 +225,7 @@
     background-image: url("../img/iphone-hand-desktop@1x.png");
     background-size: 1050px 645px;
     top: 208px;
-    left: 26px;
+    left: calc(50% - 480px);
     width: 930px;
     height: 645px;
     .retina({
