@@ -5,14 +5,14 @@
 @mobile-width: 320px;
 @tablet-width: 660px;
 @desktop-width: 960px;
-@retina-dpi: 144dpi;
-@retina-dppx: 1.5dppx;
 @mobile-only: ~"(max-width: 659px)";
 @mobile-plus-tablet: ~"(min-width: 320px) and (max-width: 959px)";
 @tablet-only: ~"(min-width: 660px) and (max-width: 959px)";
 @tablet-plus-desktop: ~"(min-width: 660px)";
 @desktop-only: ~"(min-width: 960px)";
-@retina: ~"(min-resolution: 144dpi), (min-resolution: 1.5dppx)";
-@mobile-retina: ~"(max-width: 659px) and (min-resolution: 144dpi), (max-width: 659px) and (min-resolution: 1.5dppx)";
-@tablet-retina: ~"(min-width: 660px) and (max-width: 959px) and (min-resolution: 144dpi), (min-width: 660px) and (max-width: 959px) and (min-resolution: 1.5dppx)";
-@desktop-retina: ~"(min-width: 960px) and (min-resolution: 144dpi), (min-width: 960px) and (min-resolution: 1.5dppx)";
+
+.retina(@rules) {
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+        @rules();
+    }
+}
